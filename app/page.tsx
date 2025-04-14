@@ -6,10 +6,15 @@ import NavBar from "./components/NavBar";
 const HomePage = () => {
   return (
     <>
-      <NavBar />
-      <Hero />
-      <Experience />
-      <Projects />
+      <header>
+        <NavBar />
+      </header>
+      <main className="max-w-9/12 m-auto ">
+        <Hero />
+        <Experience />
+        <Projects />
+      </main>
+      <footer></footer>
     </>
   );
 };

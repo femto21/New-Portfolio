@@ -1,13 +1,17 @@
 "use client";
-import { Vortex } from "../ui/vortex";
+import { Vortex } from "../ui/Vortex";
 
 const Hero = () => {
   return (
     <div className="w-full border-2 border-green-200">
-      <div className="w-full mt-20 h-96 p-6 border-2 border-pink-200 rounded-4xl relative overflow-hidden">
+      <div className="w-full mt-20 h-96 p-6 border-2 border-pink-200 rounded-4xl overflow-hidden">
         <Vortex
           backgroundColor="black"
-          className="absolute inset-0 w-full h-full"
+          rangeY={800}
+          particleCount={500}
+          baseHue={220}
+          baseSpeed={-0.5}
+          className="w-full h-full"
         >
           <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
             The hell is this?

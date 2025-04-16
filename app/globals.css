@@ -4,7 +4,10 @@
   .text-shadow-nav {
     text-shadow: 0 0 4px #a8a8a8;
   }
-  .text-shadow-nav-hover {
-    /* text-shadow: 0 0 6px #ff0000, 0 0 12px #ff0000, 0 0 18px #ff0000; */
+  .text-shadow-nav-subtle {
+    text-shadow: 0 0 4px #8e8e8e;
+  }
+  .text-shadow-head {
+    text-shadow: 0 0 4px #a8a8a8, 0 0 8px #a8a8a8;
   }
 }

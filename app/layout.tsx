@@ -29,9 +29,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="absolute inset-0 -z-10 overflow-hidden">
-          <div className="absolute left-[-10rem] top-[-10rem] h-[30rem] w-[30rem] rounded-full bg-purple-800 opacity-30 blur-3xl"></div>
-          <div className="absolute right-[-10rem] bottom-[-10rem] h-[30rem] w-[30rem] rounded-full bg-violet-800 opacity-30 blur-3xl"></div>
-          <div className="absolute left-[50%] top-[50%] h-[40rem] w-[40rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-pink-800 opacity-20 blur-[100px]"></div>
+          <div className="absolute left-[-10rem] top-[-10rem] h-[30rem] w-[30rem] rounded-full bg-purple-950 opacity-20 blur-3xl"></div>
+          <div className="absolute right-[-10rem] bottom-[-10rem] h-[30rem] w-[30rem] rounded-full bg-blue-800 opacity-10 blur-3xl"></div>
+          <div className="absolute left-[50%] top-[50%] h-[40rem] w-[40rem] -translate-x-3/12 -translate-y-7/12 rounded-full bg-pink-800 opacity-10 blur-[100px]"></div>
         </div>
 
         <ThemeProvider

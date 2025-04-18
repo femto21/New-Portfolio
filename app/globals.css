@@ -1,6 +1,18 @@
 @import "tailwindcss";
 
 @layer utilities {
+  .text-color1 {
+    color: #b27aee;
+  }
+  .text-color1:hover {
+    color: #aaffe0;
+  }
+  .text-color2 {
+    color: #cabeee;
+  }
+  .text-color2:hover {
+    color: #aaffe0;
+  }
   .text-shadow-nav {
     text-shadow: 0 0 4px #a8a8a8;
   }

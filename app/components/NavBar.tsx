@@ -9,16 +9,13 @@ const NavBar = () => {
             <div className="pr-12  border-r-[1.25px] border-[#F5EFFF]">
               <Link
                 href="/"
-                className="text-xl  font-medium nav-color1 text-shadow-nav"
+                className="text-xl  font-medium nav-color1 text-shadow"
               >
                 Arpit Gahlot
               </Link>
             </div>
             <div className="ml-12 flex gap-8 justify-between items-center">
-              <Link
-                href="/about"
-                className="font-bold nav-color2 text-shadow-nav"
-              >
+              <Link href="/about" className="font-bold nav-color2 text-shadow">
                 About
               </Link>
             </div>
@@ -26,19 +23,19 @@ const NavBar = () => {
           <div className="flex justify-between gap-6 ">
             <Link
               href="#experience"
-              className="font-medium nav-color1 text-shadow-nav-subtle"
+              className="font-medium nav-color1 text-shadow-subtle"
             >
               Experience
             </Link>
             <Link
               href="#projects"
-              className="font-medium nav-color1 text-shadow-nav-subtle"
+              className="font-medium nav-color1 text-shadow-subtle"
             >
               Projects
             </Link>
             <Link
               href="#contact"
-              className="font-medium nav-color1 text-shadow-nav-subtle"
+              className="font-medium nav-color1 text-shadow-subtle"
             >
               contact
             </Link>

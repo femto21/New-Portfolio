@@ -19,10 +19,10 @@
   .nav-color2:hover {
     color: #aaffe0;
   }
-  .text-shadow-nav {
-    text-shadow: 0 0 4px #a8a8a8;
+  .text-shadow {
+    text-shadow: 0 0 8px #c1c1c1;
   }
-  .text-shadow-nav-subtle {
+  .text-shadow-subtle {
     text-shadow: 0 0 4px #8e8e8e;
   }
   .text-shadow-head {

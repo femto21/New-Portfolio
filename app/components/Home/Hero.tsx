@@ -10,7 +10,7 @@ const Hero = () => {
   ];
   return (
     <div className="w-full flex flex-row gap-8 border-2 border-green-200">
-      <div className="w-full mt-20 h-96 p-6 border-2 border-pink-200 rounded-4xl overflow-hidden">
+      <div className="w-full mt-20 m-20 h-96 p-6 border-2 border-pink-200 rounded-4xl overflow-hidden">
         <Vortex
           backgroundColor="black"
           rangeY={800}
@@ -20,12 +20,12 @@ const Hero = () => {
           className="w-full h-full"
         >
           <div className="p-8 w-full h-full border-2 border-red-300 flex flex-col z-10 ">
-            <div className="flex flex-col ">
-              <div>
-                <p className="mb-4 text-5xl  text-[#cabeee] text-shadow-head">
+            <div className="flex flex-col">
+              <div className="pb-8 border-b-[1.25px] border-[#a594f9]">
+                <p className="mb-4 text-5xl  text-color2 text-shadow-head">
                   Hello world,
                 </p>
-                <p className="text-4xl  text-[#b27aee] text-shadow-head">
+                <p className="text-4xl  text-color1 text-shadow-head">
                   my name is Arpit Gahlot
                 </p>
               </div>
@@ -35,7 +35,6 @@ const Hero = () => {
           </div>
         </Vortex>
       </div>
-      <div className="mt-20 p-6 border-2 border-blue-300 w-96 h-96 rounded-4xl"></div>
     </div>
   );
 };

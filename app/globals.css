@@ -2,15 +2,21 @@
 
 @layer utilities {
   .text-color1 {
-    color: #b27aee;
-  }
-  .text-color1:hover {
-    color: #aaffe0;
+    color: #a594f9;
   }
   .text-color2 {
-    color: #cabeee;
+    color: #f5efff;
   }
-  .text-color2:hover {
+  .nav-color1 {
+    color: #a594f9;
+  }
+  .nav-color1:hover {
+    color: #aaffe0;
+  }
+  .nav-color2 {
+    color: #f5efff;
+  }
+  .nav-color2:hover {
     color: #aaffe0;
   }
   .text-shadow-nav {

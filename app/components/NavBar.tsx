@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaEarlybirds } from "react-icons/fa";
 
 const NavBar = () => {
   return (
@@ -9,9 +10,10 @@ const NavBar = () => {
             <div className="pr-12  border-r-[1.25px] border-[#F5EFFF]">
               <Link
                 href="/"
-                className="text-xl  font-medium nav-color1 text-shadow"
+                className="text-xl font-medium nav-color1 text-shadow flex flex-row items-center"
               >
-                Arpit Gahlot
+                <FaEarlybirds />
+                Femto
               </Link>
             </div>
             <div className="ml-12 flex gap-8 justify-between items-center">

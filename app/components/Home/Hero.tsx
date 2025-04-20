@@ -1,5 +1,9 @@
 "use client";
+
 import { Vortex } from "../ui/Vortex";
+import { TbSchool } from "react-icons/tb";
+import { FaCanadianMapleLeaf } from "react-icons/fa";
+import { TiGlobeOutline } from "react-icons/ti";
 
 const Hero = () => {
   const words = [
@@ -9,8 +13,8 @@ const Hero = () => {
     "Game Developer",
   ];
   return (
-    <div className="w-full flex flex-row gap-8  border-green-200">
-      <div className="w-full mt-20 m-20 h-96 p-6  border-pink-200 rounded-4xl overflow-hidden">
+    <div className="w-full flex flex-row gap-8 border-green-200">
+      <div className="w-full m-20 !mt-15 h-96 p-6 border-pink-200 rounded-4xl overflow-hidden">
         <Vortex
           backgroundColor="black"
           rangeY={800}
@@ -23,7 +27,7 @@ const Hero = () => {
             <div className="flex flex-col">
               <div className="pb-8 border-b-[1.25px] border-[#a594f9]">
                 <p className="mb-4 text-5xl  text-color2 text-shadow">
-                  Hello world,
+                  Greetings,
                 </p>
                 <p className="text-4xl  text-color1 text-shadow">
                   my name is Arpit Gahlot
@@ -47,12 +51,15 @@ const Hero = () => {
             </div>
             <div className="flex flex-row pt-6">
               <div className="w-full border-r-[1.25px] border-[#a594f9] mr-4">
-                <p className="text-2xl text-color2 text-shadow">
+                <p className="text-2xl text-color2 text-shadow flex flex-row items-center gap-1.5">
+                  <TbSchool />
                   Dalhousie University
                 </p>
               </div>
               <div className="w-full">
-                <p className="text-2xl text-color2 text-shadow">Canada</p>
+                <p className="text-2xl text-color2 text-shadow flex flex-row gap-1.5 items-center">
+                  <FaCanadianMapleLeaf /> Canada
+                </p>
               </div>
             </div>
           </div>

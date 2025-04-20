@@ -2,7 +2,7 @@ import { CardSpotlight } from "../ui/card-spotlight";
 
 const ProjectCard = () => {
   return (
-    <CardSpotlight className="h-96 w-96">
+    <CardSpotlight className="h-96 w-90">
       <p className="text-xl font-bold relative z-20 mt-2 text-white">
         Authentication steps
       </p>

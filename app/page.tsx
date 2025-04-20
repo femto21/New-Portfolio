@@ -9,7 +9,7 @@ const HomePage = () => {
       <header>
         <NavBar />
       </header>
-      <main className="max-w-9/12 m-auto ">
+      <main className="max-w-9/12 m-auto">
         <Hero />
         <Experience />
         <Projects />

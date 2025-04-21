@@ -14,7 +14,7 @@ const Hero = () => {
   ];
   return (
     <div className="w-full flex flex-row gap-8 border-green-200">
-      <div className="w-full m-20 !mt-15 h-88 p-6 border-pink-200 rounded-4xl overflow-hidden">
+      <div className="w-full mt-15 mb-20 h-88 p-6 border-pink-200 rounded-4xl overflow-hidden">
         <Vortex
           backgroundColor="black"
           rangeY={800}

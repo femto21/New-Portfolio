@@ -11,10 +11,8 @@ type Project = {
 };
 
 const ProjectCard = (props: Project) => {
-  console.log(props);
-
   return (
-    <CardSpotlight className="h-96 w-90 rounded-2xl">
+    <CardSpotlight className="h-96 w-90 rounded-2xl dark:hover:shadow-2xl dark:hover:shadow-violet-500/[0.1]">
       <p className="text-xl relative z-20 mt-2 text-color1 text-shadow">
         {props.title}
       </p>

@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "Tank Wars",
+    "description": "One of my biggest projects ever, a multiplayer 2D game built with the Pygame (CE) library. It is currently in progress and I miiiiggghht add an online option to it.",
+    "tech": ["Python", "MongoDB"],
+    "image": "https://arpitprojects.s3.amazonaws.com/tank-wars.png",
+    "url": "https://github.com/femto21/TankWars"
+  },
+  {
+    "id": 2,
+    "title": "My Portfolio",
+    "description": "My portfolio website :) Probably had the most fun building this out of all my projects",
+    "tech": [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "Aceternity UI",
+      "ShadCN UI",
+      "AWS"
+    ],
+    "image": "https://arpitprojects.s3.amazonaws.com/new-portfolio.png",
+    "url": "https://github.com/femto21/New-Portfolio"
+  },
+  {
+    "id": 3,
+    "title": "Femto AI",
+    "description": "An AI chatbot featuring my favorite fictional character, Femto/Griffith. The chatbot has a personality too!",
+    "tech": [
+      "Next.js",
+      "React",
+      "Clerk",
+      "TailwindCSS",
+      "Daisy UI",
+      "Supabase"
+    ],
+    "image": "https://arpitprojects.s3.amazonaws.com/femto-ai.png",
+    "url": "https://github.com/femto21/Femto-AI"
+  }
+]

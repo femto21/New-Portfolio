@@ -9,21 +9,6 @@
   },
   {
     "id": 2,
-    "title": "My Portfolio",
-    "description": "My portfolio website :) Probably had the most fun building this out of all my projects",
-    "tech": [
-      "Next.js",
-      "React",
-      "TailwindCSS",
-      "Aceternity UI",
-      "ShadCN UI",
-      "AWS"
-    ],
-    "image": "https://arpitprojects.s3.amazonaws.com/new-portfolio.png",
-    "url": "https://github.com/femto21/New-Portfolio"
-  },
-  {
-    "id": 3,
     "title": "Femto AI",
     "description": "An AI chatbot featuring my favorite fictional character, Femto/Griffith. The chatbot has a personality too!",
     "tech": [
@@ -36,5 +21,20 @@
     ],
     "image": "https://arpitprojects.s3.amazonaws.com/femto-ai.png",
     "url": "https://github.com/femto21/Femto-AI"
+  },
+  {
+    "id": 3,
+    "title": "My Portfolio",
+    "description": "My portfolio website :) Probably had the most fun building this out of all my projects",
+    "tech": [
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "Aceternity UI",
+      "ShadCN UI",
+      "AWS"
+    ],
+    "image": "https://arpitprojects.s3.amazonaws.com/new-portfolio.png",
+    "url": "https://github.com/femto21/New-Portfolio"
   }
 ]

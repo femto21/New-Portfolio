@@ -6,6 +6,7 @@ type Project = {
   id: number;
   title: string;
   description: string;
+  tags: String[];
   tech: string[];
   image: string;
   url: string;
@@ -14,11 +15,8 @@ type Project = {
 const ProjectCard = (props: Project) => {
   const [hovered, setHovered] = useState(false);
   return (
-    <div
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      className="h-96 w-full p-3 rounded-2xl flex flex-row hover:shadow-2xl transition-all duration-300 ease-out hover:shadow-violet-500/[0.1]"
-    >
+    <div className="h-96 w-full relative p-3 rounded-2xl overflow-hidden flex flex-row hover:shadow-2xl transition-all duration-300 ease-out hover:shadow-violet-500/[0.1]">
+      <div className="absolute w-full h-full top-0 left-0 transition duration-300 group-hover/card:bg-black opacity-60"></div>
       <img src={props.image} className="rounded-xl h-90 " alt={props.title} />
       <div className="px-4 ">
         <div className="flex flex-row items-center justify-center">
@@ -26,14 +24,25 @@ const ProjectCard = (props: Project) => {
             {props.title}
           </p>
         </div>
-
-        <div className="text-color2 text-shadow mt-4 relative z-20">
-          {props.description}
+        <div className="flex flex-row gap-2">
+          {props.tags.map((tag) => {
+            return (
+              <div
+                key={tag.id}
+                className="bg-gray-600 px-2 py-1 text-color2 text-shadow rounded-lg"
+              >
+                {tag.name}
+              </div>
+            );
+          })}
         </div>
         <div className="text-color2 text-shadow relative z-20 flex flex-row flex-wrap">
           {props.tech.map((currentTech) => {
             return <p key={currentTech}>#{currentTech}&nbsp;</p>;
           })}
+        </div>
+        <div className="text-color2 text-shadow mt-4 relative z-20">
+          {props.description}
         </div>
 
         <div className="text-l text-color1 text-shadow relative flex flex-row-reverse z-20">

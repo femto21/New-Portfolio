@@ -18,7 +18,7 @@ const Hero = () => {
         <Vortex
           backgroundColor="black"
           rangeY={800}
-          particleCount={500}
+          particleCount={300}
           baseHue={220}
           baseSpeed={-0.5}
           className="w-full h-full"

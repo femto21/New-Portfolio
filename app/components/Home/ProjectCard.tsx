@@ -26,40 +26,44 @@ const ProjectCard = (props: Project) => {
             hovered ? " opacity-10 " : "opacity-0"
           }`}
         ></div>
-        <img
-          src={props.image}
-          className="rounded-xl z-20 hover:scale-110 duration-300 ease-out"
-          alt={props.title}
-        />
-        <div className="px-4 z-20  flex flex-col justify-between h-full border-2">
-          <div className="flex mb-2 flex-row items-center justify-center">
-            <p className="text-4xl  z-20 text-color1 text-shadow">
-              {props.title}
+        <a className="z-20 block w-fit">
+          <img
+            src={props.image}
+            className="rounded-xl hover:scale-110 duration-300 ease-out"
+            alt={props.title}
+          />
+        </a>
+        <div className="px-8 z-20 grid grid-rows-[auto_auto_auto_1fr_auto] h-full">
+          <div className="row-start-1 flex mb-1 flex-row items-center ">
+            <p className="text-2xl z-20 text-shadow">
+              <a href={props.url} className="nav-color1">
+                {props.title}
+              </a>
             </p>
           </div>
-          <div className="flex flex-row  gap-2">
+          <div className="row-start-2 mb-1 flex flex-row gap-2">
             {props.tags.map((tag) => {
               return (
                 <div
                   key={tag.id}
-                  className="bg-gray-600 px-2 py-1 text-color2  text-shadow rounded-lg"
+                  className="bg-gray-600 px-2 py-0.5 text-color2  text-shadow rounded-lg"
                 >
                   {tag.name}
                 </div>
               );
             })}
           </div>
-          <div className="text-color2 text-shadow z-20 flex flex-row flex-wrap">
+          <div className="row-start-3 text-color2 text-shadow mb-1 z-20 flex flex-row flex-wrap">
             {props.tech.map((currentTech) => {
               return <p key={currentTech}>#{currentTech}&nbsp;</p>;
             })}
           </div>
-          <div className="text-color2 text-shadow mt-4  z-20">
+          <div className="row-start-4 text-color2 text-shadow z-20">
             {props.description}
           </div>
 
-          <div className="text-l h-full text-color1 text-shadow  z-20">
-            <a href={props.url} target="_blank">
+          <div className="row-start-5 text-l text-shadow  z-20">
+            <a href={props.url} target="_blank" className="nav-color1">
               Github
             </a>
           </div>

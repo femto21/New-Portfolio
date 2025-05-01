@@ -26,10 +26,14 @@ const ProjectCard = (props: Project) => {
             hovered ? " opacity-10 " : "opacity-0"
           }`}
         ></div>
-        <a className="z-20 block w-fit">
+        <a
+          className="z-20 block w-fit max-w-84 hover:cursor-pointer"
+          href={props.url}
+          target="_blank"
+        >
           <img
             src={props.image}
-            className="rounded-xl hover:scale-110 duration-300 ease-out"
+            className=" rounded-xl hover:scale-110 duration-300 ease-out"
             alt={props.title}
           />
         </a>

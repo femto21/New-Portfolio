@@ -26,21 +26,19 @@ const ProjectCard = (props: Project) => {
             hovered ? " opacity-10 " : "opacity-0"
           }`}
         ></div>
-        <a
-          className="z-20 block w-fit max-w-84 hover:cursor-pointer"
-          href={props.url}
-          target="_blank"
-        >
-          <img
-            src={props.image}
-            className=" rounded-xl hover:scale-110 duration-300 ease-out"
-            alt={props.title}
-          />
-        </a>
-        <div className="px-8 z-20 grid grid-rows-[auto_auto_auto_1fr_auto] h-full">
+        <div className="z-20 basis-1/2 relative hover:cursor-pointer">
+          <a href={props.url} target="_blank">
+            <img
+              src={props.image}
+              className="rounded-xl w-full h-full object-cover hover:scale-110 duration-300 ease-out "
+              alt={props.title}
+            />
+          </a>
+        </div>
+        <div className="px-8 z-20 grid grid-rows-[auto_auto_auto_1fr_auto] h-full basis-1/2">
           <div className="row-start-1 flex mb-1 flex-row items-center ">
             <p className="text-2xl z-20 text-shadow">
-              <a href={props.url} className="nav-color1">
+              <a href={props.url} className="nav-color1" target="_blank">
                 {props.title}
               </a>
             </p>

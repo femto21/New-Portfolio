@@ -14,14 +14,15 @@ const Hero = () => {
   ];
   return (
     <div className="w-full flex flex-row gap-8 border-green-200">
-      <div className="w-full mt-15 mb-20 h-88 p-6 border-pink-200 rounded-4xl overflow-hidden">
+      <div className="w-full mt-15 mb-20 h-88 pb-6 border-pink-200 rounded-4xl overflow-hidden">
         <Vortex
           backgroundColor="black"
           rangeY={800}
-          particleCount={300}
+          particleCount={70}
           baseHue={220}
           baseSpeed={-0.5}
-          className="w-full h-full"
+          baseRadius={3}
+          className="object-contain w-full h-full rounded-4xl"
         >
           <div className="p-8 w-full h-full border-red-300 flex flex-col z-10 ">
             <div className="flex flex-col">

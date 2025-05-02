@@ -84,8 +84,14 @@ export const Vortex = (props: VortexProps) => {
 
     let x, y, vx, vy, life, ttl, speed, radius, hue;
 
-    x = rand(canvas.width);
-    y = center[1] + randRange(rangeY);
+    // x = rand(canvas.width);
+    // y = center[1] + randRange(rangeY);
+
+    const areaWidth = canvas.width; // right 30%
+    const areaHeight = canvas.height; // top 30%
+
+    x = canvas.width - rand(areaWidth); // near right edge
+    y = rand(areaHeight); // near top edge
     vx = 0;
     vy = 0;
     life = 0;
@@ -242,9 +248,9 @@ export const Vortex = (props: VortexProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         ref={containerRef}
-        className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center"
+        className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center overflow-hidden rounded-4xl"
       >
-        <canvas ref={canvasRef}></canvas>
+        <canvas ref={canvasRef} className="w-full h-full" />
       </motion.div>
 
       <div className={cn("relative z-10", props.className)}>

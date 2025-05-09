@@ -1,9 +1,9 @@
 "use client";
 
-import { Vortex } from "../ui/Vortex";
 import { TbSchool } from "react-icons/tb";
 import { FaCanadianMapleLeaf } from "react-icons/fa";
-import { TiGlobeOutline } from "react-icons/ti";
+import { motion } from "motion/react";
+import { AuroraBackground } from "../ui/aurora-background";
 
 const Hero = () => {
   const words = [
@@ -14,16 +14,8 @@ const Hero = () => {
   ];
   return (
     <div className="w-full flex flex-row gap-8 border-green-200">
-      <div className="w-full mt-15 mb-20 h-88 pb-6 border-pink-200 rounded-4xl overflow-hidden">
-        <Vortex
-          backgroundColor="black"
-          rangeY={800}
-          particleCount={70}
-          baseHue={220}
-          baseSpeed={-0.5}
-          baseRadius={3}
-          className="object-contain w-full h-full rounded-4xl"
-        >
+      <div className="w-full mt-15 mb-20 bg-black border-pink-200 rounded-4xl overflow-hidden">
+        <AuroraBackground className="object-contain w-full h-full rounded-4xl">
           <div className="p-8 w-full h-full border-red-300 flex flex-col z-10 ">
             <div className="flex flex-col">
               <div className="pb-8 border-b-[1.25px] border-[#a594f9]">
@@ -64,7 +56,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-        </Vortex>
+        </AuroraBackground>
       </div>
     </div>
   );

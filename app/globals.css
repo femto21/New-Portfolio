@@ -29,3 +29,15 @@
     text-shadow: 0 0 4px #a8a8a8, 0 0 8px #a8a8a8;
   }
 }
+
+@theme inline {
+  --animate-aurora: aurora 60s linear infinite;
+  @keyframes aurora {
+    from {
+      background-position: 50% 50%, 50% 50%;
+    }
+    to {
+      background-position: 350% 50%, 350% 50%;
+    }
+  }
+}

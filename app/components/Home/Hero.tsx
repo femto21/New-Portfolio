@@ -14,7 +14,7 @@ const Hero = () => {
   ];
   return (
     <div className="w-full flex flex-row gap-8 border-green-200">
-      <div className="w-full mt-15 mb-20 bg-black border-pink-200 rounded-4xl overflow-hidden">
+      <div className="w-full mt-15 mb-20 bg-gray-950/30 border-pink-200 rounded-4xl overflow-hidden">
         <AuroraBackground className="object-contain w-full h-full rounded-4xl">
           <div className="p-8 w-full h-full border-red-300 flex flex-col z-10 ">
             <div className="flex flex-col">

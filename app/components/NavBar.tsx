@@ -4,7 +4,7 @@ import { FaEarlybirds } from "react-icons/fa";
 const NavBar = () => {
   return (
     <header>
-      <nav className="md:px-4 md:py-6 px-6 py-6 flex items-center top-0 z-20">
+      <nav className="md:px-4 md:py-6 px-6 py-6 flex items-center font-clashDisplay top-0 z-20">
         <div className="w-full flex justify-between items-center max-w-9/12 m-auto">
           <div className="flex justify-between">
             <div className="pr-12  border-r-[1.25px] border-[#F5EFFF]">

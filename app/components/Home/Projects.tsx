@@ -26,7 +26,7 @@ async function getProjects(): Promise<Project[]> {
 const Projects = async () => {
   const projects = await getProjects();
   return (
-    <section>
+    <section className="mx-40">
       <div className="m-auto w-full">
         <p className="text-4xl text-color1 text-shadow">My Projects</p>
         <div className="mt-10 flex flex-col gap-6 justify-between">

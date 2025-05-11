@@ -11,7 +11,7 @@ const HomePage = () => {
         <NavBar />
       </header>
 
-      <main className="max-w-9/12 m-auto">
+      <main className=" m-auto">
         <TracingBeam>
           <Hero />
           <Experience />

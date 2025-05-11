@@ -3,6 +3,7 @@
 import { TbSchool } from "react-icons/tb";
 import { FaCanadianMapleLeaf } from "react-icons/fa";
 import { AuroraBackground } from "../ui/aurora-background";
+import { Spotlight } from "../ui/spotlight-new";
 
 const Hero = () => {
   const words = [
@@ -12,9 +13,9 @@ const Hero = () => {
     "Game Developer",
   ];
   return (
-    <div className="h-screen w-full">
+    <div className="h-screen w-full top-0">
       <div className="w-full h-auto font-clashDisplay flex flex-row gap-8 ">
-        <div className="w-full mx-36 mt-32 bg-gray-950/20  rounded-4xl overflow-hidden">
+        <div className="w-full mx-40 mt-32 bg-gray-950/20  rounded-4xl overflow-hidden">
           <AuroraBackground className="object-contain w-full h-full rounded-4xl">
             <div className="p-12 w-full h-full  flex flex-col z-10 ">
               <div className="flex flex-col">

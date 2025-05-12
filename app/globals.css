@@ -23,13 +23,18 @@
         transparent 52%
       ),
       radial-gradient(rgb(147, 51, 234) 37%, transparent 46%),
+      radial-gradient(
+        circle at 85% top,
+        rgb(244, 114, 182) 20%,
+        transparent 60%
+      ),
       linear-gradient(155deg, transparent 65%, rgb(59, 130, 246) 95%),
       linear-gradient(45deg, rgb(99, 102, 241), rgb(139, 92, 246));
 
-    background-position: left bottom, 109% 68%, 109% 68%, center center,
-      center center;
+    background-position: left bottom, 109% 68%, center top, 109% 68%,
+      center center, center center;
     background-repeat: no-repeat;
-    background-size: 200% 200%, 285% 500%, 285% 500%, cover, cover;
+    background-size: 200% 200%, 285% 500%, 285% 500%, 100% 300%, cover, cover;
   }
 
   .text-color1 {

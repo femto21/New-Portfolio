@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={` ${manrope.className}`}>
-        <div className="fixed inset-0 -z-10 background-aurora"></div>
+        <div className="inset-0 -z-10 background-aurora"></div>
 
         <ThemeProvider
           attribute="class"

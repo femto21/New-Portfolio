@@ -37,12 +37,16 @@ const ProjectCard = (props: Project) => {
         <div className="px-8 z-20 grid grid-rows-[auto_auto_auto_1fr_auto] h-full basis-1/2">
           <div className="row-start-1 flex mb-1 flex-row items-center ">
             <p className="text-2xl z-20 text-shadow">
-              <a href={props.url} className="nav-color1" target="_blank">
+              <a
+                href={props.url}
+                className="nav-color1 font-clashDisplay"
+                target="_blank"
+              >
                 {props.title}
               </a>
             </p>
           </div>
-          <div className="row-start-2 mb-1 flex flex-row gap-2">
+          <div className="row-start-2 font-clashDisplay mb-1 flex flex-row gap-2">
             {props.tags.map((tag) => {
               return (
                 <div
@@ -54,7 +58,7 @@ const ProjectCard = (props: Project) => {
               );
             })}
           </div>
-          <div className="row-start-3 text-color2 text-shadow mb-1 z-20 flex flex-row flex-wrap">
+          <div className="row-start-3 font-clashDisplay text-color2 text-shadow mb-1 z-20 flex flex-row flex-wrap">
             {props.tech.map((currentTech) => {
               return <p key={currentTech}>#{currentTech}&nbsp;</p>;
             })}
@@ -64,7 +68,11 @@ const ProjectCard = (props: Project) => {
           </div>
 
           <div className="row-start-5 text-l text-shadow  z-20">
-            <a href={props.url} target="_blank" className="nav-color1">
+            <a
+              href={props.url}
+              target="_blank"
+              className="nav-color1 font-clashDisplay"
+            >
               Github
             </a>
           </div>

@@ -10,14 +10,17 @@ const NavBar = () => {
             <div className="pr-12  border-r-[1.25px] border-[#F5EFFF]">
               <Link
                 href="/"
-                className="text-xl font-medium nav-color1 text-shadow flex flex-row items-center"
+                className="text-xl font-medium nav-color1 text-shadow transition-colors duration-150 ease-out flex flex-row items-center"
               >
                 <FaEarlybirds />
                 Femto
               </Link>
             </div>
             <div className="ml-12 flex gap-8 justify-between items-center">
-              <Link href="/about" className="font-bold nav-color2 text-shadow">
+              <Link
+                href="/about"
+                className="font-bold transition-colors duration-150 nav-color2 ease-out text-shadow"
+              >
                 About
               </Link>
             </div>
@@ -25,19 +28,19 @@ const NavBar = () => {
           <div className="flex justify-between gap-6 ">
             <Link
               href="#experience"
-              className="font-medium nav-color1 text-shadow-subtle"
+              className="font-medium nav-color1 transition-colors duration-150 ease-out text-shadow-subtle"
             >
               Experience
             </Link>
             <Link
               href="#projects"
-              className="font-medium nav-color1 text-shadow-subtle"
+              className="font-medium nav-color1 transition-colors duration-150 ease-out text-shadow-subtle"
             >
               Projects
             </Link>
             <Link
               href="#contact"
-              className="font-medium nav-color1 text-shadow-subtle"
+              className="font-medium nav-color1 transition-colors duration-150 ease-out text-shadow-subtle"
             >
               contact
             </Link>

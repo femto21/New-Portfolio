@@ -45,7 +45,7 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("relative mx-auto h-full w-full max-w-10/12", className)}
     >
-      <div className="absolute top-14 -left-4 md:-left-20">
+      <div className="absolute top-30 -left-4 md:-left-20">
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
@@ -78,9 +78,9 @@ export const TracingBeam = ({
               y1={y1} // set y1 for gradient
               y2={y2} // set y2 for gradient
             >
-              <stop stopColor="#18CCFC" stopOpacity="0"></stop>
-              <stop stopColor="#18CCFC"></stop>
-              <stop offset="0.325" stopColor="#6344F5"></stop>
+              <stop stopColor="#d9f7ff" stopOpacity="0"></stop>
+              <stop stopColor="#d9f7ff"></stop>
+              <stop offset="0.325" stopColor="#4d35bd"></stop>
               <stop offset="1" stopColor="#AE48FF" stopOpacity="0"></stop>
             </motion.linearGradient>
           </defs>

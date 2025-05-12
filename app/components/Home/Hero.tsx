@@ -1,7 +1,7 @@
 "use client";
 
 import { TbSchool } from "react-icons/tb";
-import { FaCanadianMapleLeaf } from "react-icons/fa";
+import { FaCanadianMapleLeaf, FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { AuroraBackground } from "../ui/aurora-background";
 import { Spotlight } from "../ui/spotlight-new";
 
@@ -14,6 +14,28 @@ const Hero = () => {
   ];
   return (
     <div className="h-screen w-full top-0">
+      <div className="absolute flex flex-col gap-4 text-lg top-[20.5%] left-8  items-center z-20">
+        <a
+          href="https://github.com/femto21"
+          rel="noopener"
+          target="_blank"
+          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
+        >
+          <FaGithubAlt />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/arpit-gahlot-1bb63a300/"
+          rel="noopener"
+          target="_blank"
+          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
+        >
+          <FaLinkedin />
+        </a>
+        <div className="bg-[#f5efff] h-10 w-[1px] m-auto mt-1 icon-shadow"></div>
+      </div>
+      <div className="absolute rotate-90 text-sm top-[23%] -right-8 nav-color2 z-20 text-shadow font-clashDisplay">
+        <a href="mailto:arpitgahlot@dal.ca">Contact &nbsp; Me</a>
+      </div>
       <div className="w-full h-auto font-clashDisplay flex flex-row gap-8 ">
         <div className="w-full mx-40 mt-32 bg-gray-950/20  rounded-4xl overflow-hidden">
           <AuroraBackground className="object-contain w-full h-full rounded-4xl">

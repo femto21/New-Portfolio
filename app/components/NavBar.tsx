@@ -42,7 +42,7 @@ const NavBar = () => {
               href="#contact"
               className="font-medium nav-color1 transition-colors duration-150 ease-out text-shadow-subtle"
             >
-              contact
+              Contact
             </Link>
           </div>
         </div>

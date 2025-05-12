@@ -64,6 +64,9 @@
   .text-shadow-head {
     text-shadow: 0 0 4px #a8a8a8, 0 0 8px #a8a8a8;
   }
+  .icon-shadow {
+    filter: drop-shadow(0 0 4px #8e8e8e);
+  }
 }
 
 @theme inline {

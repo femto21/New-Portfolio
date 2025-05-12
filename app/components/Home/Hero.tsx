@@ -3,15 +3,10 @@
 import { TbSchool } from "react-icons/tb";
 import { FaCanadianMapleLeaf, FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { AuroraBackground } from "../ui/aurora-background";
-import { Spotlight } from "../ui/spotlight-new";
+import { PiMouseSimpleThin } from "react-icons/pi";
+import { HiArrowLongDown } from "react-icons/hi2";
 
 const Hero = () => {
-  const words = [
-    "Software Engineer",
-    "Full Stack Developer",
-    "Cloud Engineer",
-    "Game Developer",
-  ];
   return (
     <div className="h-screen w-full top-0">
       <div className="absolute flex flex-col gap-4 text-lg top-[20.5%] left-8  items-center z-20">
@@ -33,11 +28,13 @@ const Hero = () => {
         </a>
         <div className="bg-[#f5efff] h-10 w-[1px] m-auto mt-1 icon-shadow"></div>
       </div>
-      <div className="absolute rotate-90 text-sm top-[23%] -right-8 nav-color2 z-20 text-shadow font-clashDisplay">
-        <a href="mailto:arpitgahlot@dal.ca">Contact &nbsp; Me</a>
+      <div className="absolute rotate-90 text-sm top-[23%] -right-4  z-20 text-shadow font-clashDisplay">
+        <a href="mailto:arpitgahlot@dal.ca" className="nav-color2">
+          Contact &nbsp; Me
+        </a>
       </div>
       <div className="w-full h-auto font-clashDisplay flex flex-row gap-8 ">
-        <div className="w-full mx-40 mt-32 bg-gray-950/20  rounded-4xl overflow-hidden">
+        <div className="w-full mx-40 mt-20 bg-gray-950/20  rounded-4xl overflow-hidden">
           <AuroraBackground className="object-contain w-full h-full rounded-4xl">
             <div className="p-12 w-full h-full  flex flex-col z-10 ">
               <div className="flex flex-col">
@@ -80,6 +77,15 @@ const Hero = () => {
               </div>
             </div>
           </AuroraBackground>
+        </div>
+
+        <div className="absolute top-[27%] left-1/2 -translate-x-1/2 flex flex-row items-center gap-0 animate-gentle-bounce">
+          <div className="text-5xl icon-shadow">
+            <PiMouseSimpleThin />
+          </div>
+          <div className="text-3xl icon-shadow relative -left-2">
+            <HiArrowLongDown />
+          </div>
         </div>
       </div>
     </div>

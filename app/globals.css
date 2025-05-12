@@ -85,3 +85,17 @@
   --font-manrope: "Manrope", sans-serif;
   --font-clashDisplay: "ClashDisplay", sans-serif;
 }
+
+@keyframes gentle-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+.animate-gentle-bounce {
+  animation: gentle-bounce 1.5s ease-in-out infinite;
+}

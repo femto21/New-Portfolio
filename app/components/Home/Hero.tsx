@@ -5,6 +5,7 @@ import { FaCanadianMapleLeaf, FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { AuroraBackground } from "../ui/aurora-background";
 import { PiMouseSimpleThin } from "react-icons/pi";
 import { HiArrowLongDown } from "react-icons/hi2";
+import { useScroll } from "motion/react";
 
 const Hero = () => {
   return (
@@ -26,10 +27,13 @@ const Hero = () => {
         >
           <FaLinkedin />
         </a>
-        <div className="bg-[#f5efff] h-10 w-[1px] m-auto mt-1 icon-shadow"></div>
+        <div className="bg-[#f5efff] h-12 w-[1px] m-auto mt-1 icon-shadow"></div>
       </div>
       <div className="absolute rotate-90 text-sm top-[23%] -right-4  z-20 text-shadow font-clashDisplay">
-        <a href="mailto:arpitgahlot@dal.ca" className="nav-color2">
+        <a
+          href="mailto:arpitgahlot@dal.ca"
+          className="nav-color2 transition-all duration-300 ease-out"
+        >
           Contact &nbsp; Me
         </a>
       </div>

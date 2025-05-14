@@ -19,7 +19,7 @@ const NavBar = () => {
             <div className="ml-12 flex gap-8 justify-between items-center">
               <Link
                 href="/about"
-                className="font-bold transition-all hover:scale-102 duration-150 nav-color2 ease-out text-shadow"
+                className="font-bold transition-all  duration-150 nav-color2 ease-out text-shadow"
               >
                 About
               </Link>
@@ -28,19 +28,19 @@ const NavBar = () => {
           <div className="flex justify-between gap-6 ">
             <Link
               href="#experience"
-              className="font-medium nav-color1 transition-all hover:scale-102 duration-150 ease-out text-shadow-subtle"
+              className="font-medium nav-color1 transition-all  duration-150 ease-out text-shadow-subtle"
             >
               Experience
             </Link>
             <Link
               href="#projects"
-              className="font-medium nav-color1 transition-all hover:scale-102 duration-150 ease-out text-shadow-subtle"
+              className="font-medium nav-color1 transition-all duration-150 ease-out text-shadow-subtle"
             >
               Projects
             </Link>
             <Link
               href="#contact"
-              className="font-medium nav-color1 transition-all hover:scale-102 duration-150 ease-out text-shadow-subtle"
+              className="font-medium nav-color1 transition-all  duration-150 ease-out text-shadow-subtle"
             >
               Contact
             </Link>

@@ -1,9 +1,9 @@
-import Experience from "./components/Home/Experience";
-import Hero from "./components/Home/Hero";
-import Projects from "./components/Home/Projects";
-import NavBar from "./components/NavBar";
-import { Spotlight } from "./components/ui/spotlight-new";
-import { TracingBeam } from "./components/ui/tracing-beam";
+import Experience from "./pages/Home/sections/Experience";
+import Hero from "./pages/Home/sections/Hero";
+import Project from "./pages/Home/sections/Project";
+import NavBar from "./pages/NavBar";
+import { Spotlight } from "../ui/spotlight-new";
+import { TracingBeam } from "../ui/tracing-beam";
 
 const HomePage = () => {
   return (
@@ -17,7 +17,7 @@ const HomePage = () => {
         <TracingBeam>
           <Hero />
           <Experience />
-          <Projects />
+          <Project />
         </TracingBeam>
       </main>
       <footer></footer>

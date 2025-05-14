@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { ThemeProvider } from "./components/ui/theme-provider";
+import { ThemeProvider } from "../ui/theme-provider";
 import localFont from "next/font/local";
 import { Manrope } from "next/font/google";
 
@@ -17,7 +17,7 @@ const clashDisplay = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "New Portfolio",
+  title: "Arpit Gahlot",
   description: "Made by Arpit",
 };
 

@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@lottiefiles/dotlottie-react": "^0.13.5",
     "@radix-ui/react-navigation-menu": "^1.2.6",
     "@react-three/fiber": "8.13.6",
     "@tabler/icons-react": "^3.31.0",

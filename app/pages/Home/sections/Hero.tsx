@@ -2,10 +2,9 @@
 
 import { TbSchool } from "react-icons/tb";
 import { FaCanadianMapleLeaf, FaGithubAlt, FaLinkedin } from "react-icons/fa";
-import { AuroraBackground } from "../ui/aurora-background";
-import { PiMouseSimpleThin } from "react-icons/pi";
-import { HiArrowLongDown } from "react-icons/hi2";
-import { useScroll } from "motion/react";
+import { AuroraBackground } from "../../../../ui/aurora-background";
+import MouseAnimation from "../components/MouseAnimation";
+import { motion } from "motion/react";
 
 const Hero = () => {
   return (
@@ -20,7 +19,7 @@ const Hero = () => {
           <FaGithubAlt />
         </a>
         <a
-          href="https://www.linkedin.com/in/arpit-gahlot-1bb63a300/"
+          href="https://www.linkedin.com/in/arpitgahlot/"
           rel="noopener"
           target="_blank"
           className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
@@ -63,7 +62,9 @@ const Hero = () => {
                   </p>
                 </div>
                 <div className="w-100 ">
-                  <p className="text-color2 text-l text-shadow">ML Engineer</p>
+                  <p className="text-color2 text-l text-shadow">
+                    AI/ML Engineer
+                  </p>
                 </div>
               </div>
               <div className="flex flex-row pt-6">
@@ -83,13 +84,10 @@ const Hero = () => {
           </AuroraBackground>
         </div>
 
-        <div className="absolute top-[28%] left-1/2 -translate-x-1/2 flex flex-row items-center gap-0 animate-gentle-bounce">
-          <div className="text-5xl icon-shadow">
-            <PiMouseSimpleThin />
-          </div>
-          {/* <div className="text-3xl icon-shadow relative -left-2">
-            <HiArrowLongDown />
-          </div> */}
+        <div className="absolute top-[28%] left-1/2 -translate-x-1/2 flex flex-row items-center gap-0">
+          <motion.div className="text-5xl icon-shadow opacity-80">
+            <MouseAnimation />
+          </motion.div>
         </div>
       </div>
     </div>

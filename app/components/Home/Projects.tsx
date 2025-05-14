@@ -4,7 +4,7 @@ type Project = {
   id: number;
   title: string;
   description: string;
-  tags: String[];
+  tags: string[];
   tech: string[];
   image: string;
   url: string;

@@ -5,7 +5,7 @@ type Project = {
   id: number;
   title: string;
   description: string;
-  tags: String[];
+  tags: string[];
   tech: string[];
   image: string;
   url: string;
@@ -50,10 +50,10 @@ const ProjectCard = (props: Project) => {
             {props.tags.map((tag) => {
               return (
                 <div
-                  key={tag.id}
+                  key={tag}
                   className="bg-gray-600 px-2 py-0.5 text-color2  text-shadow rounded-lg"
                 >
-                  {tag.name}
+                  {tag}
                 </div>
               );
             })}

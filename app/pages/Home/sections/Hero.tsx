@@ -85,7 +85,16 @@ const Hero = () => {
         </div>
 
         <div className="absolute top-[28%] left-1/2 -translate-x-1/2 flex flex-row items-center gap-0">
-          <motion.div className="text-5xl icon-shadow opacity-80">
+          <motion.div
+            initial={{
+              opacity: 0,
+            }}
+            whileInView={{
+              opacity: 1,
+            }}
+            viewport={{ margin: "-300px" }}
+            className="text-5xl icon-shadow opacity-80"
+          >
             <MouseAnimation />
           </motion.div>
         </div>

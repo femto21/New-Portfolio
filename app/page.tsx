@@ -4,6 +4,7 @@ import Project from "./pages/Home/sections/Project";
 import NavBar from "./pages/NavBar";
 import { Spotlight } from "../ui/spotlight-new";
 import { TracingBeam } from "../ui/tracing-beam";
+import Deck from "./pages/Home/components/Deck";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Spotlight duration={11} height={1200} />
       <header>
         <NavBar />
+        <Deck />
       </header>
 
       <main className=" m-auto overflow-hidden">

@@ -4,9 +4,23 @@ import { TbSchool } from "react-icons/tb";
 import { FaCanadianMapleLeaf, FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { AuroraBackground } from "../../../../ui/aurora-background";
 import MouseAnimation from "../components/MouseAnimation";
-import { motion } from "motion/react";
+import { motion, spring } from "motion/react";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
+  const [isAtTop, setIsAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsAtTop(window.scrollY < 10);
+    };
+
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="h-screen w-full top-0">
       <div className="absolute flex flex-col gap-4 text-lg top-[20.5%] left-8  items-center z-20">
@@ -28,7 +42,7 @@ const Hero = () => {
         </a>
         <div className="bg-[#f5efff] h-12 w-[1px] m-auto mt-1 icon-shadow"></div>
       </div>
-      <div className="absolute rotate-90 text-sm top-[23%] -right-4  z-20 text-shadow font-clashDisplay">
+      <div className="absolute rotate-90 text-sm top-[23%] right-0 z-20 text-shadow font-clashDisplay">
         <a
           href="mailto:arpitgahlot@dal.ca"
           className="nav-color2 transition-all duration-300 ease-out"
@@ -84,15 +98,15 @@ const Hero = () => {
           </AuroraBackground>
         </div>
 
-        <div className="absolute top-[28%] left-1/2 -translate-x-1/2 flex flex-row items-center gap-0">
+        <div className="absolute top-[29%] left-1/2 -translate-x-6 flex flex-row items-center gap-0">
           <motion.div
             initial={{
               opacity: 0,
             }}
-            whileInView={{
-              opacity: 1,
+            animate={{
+              opacity: isAtTop ? 1 : 0,
+              transition: { duration: 1 },
             }}
-            viewport={{ margin: "-300px" }}
             className="text-5xl icon-shadow opacity-80"
           >
             <MouseAnimation />

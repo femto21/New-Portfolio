@@ -4,7 +4,7 @@ import { TbSchool } from "react-icons/tb";
 import { FaCanadianMapleLeaf, FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { AuroraBackground } from "../../../../ui/aurora-background";
 import MouseAnimation from "../components/MouseAnimation";
-import { motion, spring } from "motion/react";
+import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -98,7 +98,7 @@ const Hero = () => {
           </AuroraBackground>
         </div>
 
-        <div className="absolute top-[29%] left-1/2 -translate-x-6 flex flex-row items-center gap-0">
+        <div className="absolute top-[29%] left-1/2 -translate-x-5 flex flex-row items-center gap-0">
           <motion.div
             initial={{
               opacity: 0,

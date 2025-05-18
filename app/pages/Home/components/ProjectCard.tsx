@@ -25,7 +25,7 @@ const ProjectCard = (props: Project) => {
             hovered ? " opacity-10 " : "opacity-0"
           }`}
         ></div>
-        <div className="z-20 basis-1/2 relative hover:cursor-pointer">
+        <div className="z-10 basis-1/2 relative hover:cursor-pointer">
           <a href={props.url} target="_blank">
             <img
               src={props.image}

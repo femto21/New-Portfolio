@@ -34,9 +34,9 @@ const ProjectCard = (props: Project) => {
             />
           </a>
         </div>
-        <div className="px-8 z-20 grid grid-rows-[auto_auto_auto_1fr_auto] h-full basis-1/2">
+        <div className="px-8 z-10 grid grid-rows-[auto_auto_auto_1fr_auto] h-full basis-1/2">
           <div className="row-start-1 flex mb-1 flex-row items-center ">
-            <p className="text-2xl z-20 text-shadow">
+            <p className="text-2xl text-shadow">
               <a
                 href={props.url}
                 className="nav-color1 font-clashDisplay"
@@ -58,16 +58,16 @@ const ProjectCard = (props: Project) => {
               );
             })}
           </div>
-          <div className="row-start-3 font-clashDisplay text-color2 text-shadow mb-1 z-20 flex flex-row flex-wrap">
+          <div className="row-start-3 font-clashDisplay text-color2 text-shadow mb-1 z-10 flex flex-row flex-wrap">
             {props.tech.map((currentTech) => {
               return <p key={currentTech}>#{currentTech}&nbsp;</p>;
             })}
           </div>
-          <div className="row-start-4 text-color2 text-shadow z-20">
+          <div className="row-start-4 text-color2 text-shadow">
             {props.description}
           </div>
 
-          <div className="row-start-5 text-l text-shadow  z-20">
+          <div className="row-start-5 text-l text-shadow">
             <a
               href={props.url}
               target="_blank"

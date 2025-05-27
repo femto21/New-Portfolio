@@ -1,7 +1,10 @@
+"use client";
 import Link from "next/link";
 import { FaEarlybirds } from "react-icons/fa";
+import { useTheme } from "next-themes";
 
 const NavBar = () => {
+  const { setTheme } = useTheme();
   return (
     <header>
       <nav className="md:px-4 md:py-6 px-6 py-6 flex items-center font-clashDisplay top-2 z-20">
@@ -25,6 +28,12 @@ const NavBar = () => {
               </Link>
             </div>
           </div>
+          {/* <button
+            className="z-30 cursor-pointer"
+            onClick={() => setTheme("light")}
+          >
+            theme
+          </button> */}
           <div className="flex justify-between gap-6 ">
             <Link
               href="#experience"

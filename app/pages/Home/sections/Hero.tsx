@@ -52,7 +52,10 @@ const Hero = () => {
       </div>
       <div className="w-full h-auto font-clashDisplay flex flex-row gap-8 ">
         <div className="w-full mx-40 mt-26 bg-gray-950/20  rounded-4xl overflow-hidden">
-          <AuroraBackground className="object-contain w-full h-full rounded-4xl">
+          <AuroraBackground
+            data-theme="dark"
+            className="object-contain w-full h-full rounded-4xl"
+          >
             <div className="p-12 w-full h-full  flex flex-col z-10 ">
               <div className="flex flex-col">
                 <div className="pb-8 border-b-[1.25px] border-[#a594f9]">

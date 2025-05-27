@@ -15,13 +15,13 @@ const HomePage = () => {
         <Deck />
       </header>
 
-      <main className=" m-auto overflow-hidden">
+      <div className="m-auto overflow-hidden">
         <TracingBeam>
           <Hero />
           <Experience />
           <Project />
         </TracingBeam>
-      </main>
+      </div>
       <footer></footer>
     </>
   );

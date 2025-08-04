@@ -7,20 +7,7 @@ import MouseAnimation from "../components/MouseAnimation";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
 
-const Hero = () => {
-  const [isAtTop, setIsAtTop] = useState(true);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsAtTop(window.scrollY < 10);
-    };
-
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
   return (
     <div className="h-screen w-full top-0">
       <div className="absolute flex flex-col gap-4 text-lg top-[20.5%] left-8  items-center z-20">
@@ -75,7 +62,7 @@ const Hero = () => {
                 </div>
                 <div className="w-100 border-r-[1.25px] border-[#a594f9] mr-4">
                   <p className="text-color2 text-l text-shadow">
-                    Full Stack Developer
+                    Cloud Engineer
                   </p>
                 </div>
                 <div className="w-100 ">
@@ -101,7 +88,7 @@ const Hero = () => {
           </AuroraBackground>
         </div>
 
-        <div className="absolute top-[29%] left-1/2 -translate-x-5 flex flex-row items-center gap-0">
+        <div className="absolute top-[29%] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
           <motion.div
             initial={{
               opacity: 0,

@@ -28,12 +28,7 @@ const NavBar = () => {
               </Link>
             </div>
           </div>
-          {/* <button
-            className="z-30 cursor-pointer"
-            onClick={() => setTheme("light")}
-          >
-            theme
-          </button> */}
+
           <div className="flex justify-between gap-6 ">
             <Link
               href="#experience"

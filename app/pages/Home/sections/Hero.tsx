@@ -62,7 +62,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
                 </div>
                 <div className="w-100 border-r-[1.25px] border-[#a594f9] mr-4">
                   <p className="text-color2 text-l text-shadow">
-                    Cloud Engineer
+                    Cloud Architect
                   </p>
                 </div>
                 <div className="w-100 ">

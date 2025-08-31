@@ -11,16 +11,21 @@ type Project = {
 };
 
 async function getProjects(): Promise<Project[]> {
-  const res = await fetch(
-    "https://arpitprojects.s3.amazonaws.com/projects.json",
-    {
-      cache: "no-cache",
-    }
-  );
+  try {
+    const res = await fetch(
+      "https://arpitprojects.s3.amazonaws.com/projects.json",
+      {
+        cache: "no-cache",
+      }
+    );
 
-  if (!res.ok) throw new Error("Failed to fetch projects");
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
-  return res.json();
+    return (await res.json()) as Project[];
+  } catch (error) {
+    console.error("Error fetching projects:", error);
+    return [];
+  }
 }
 
 const Projects = async () => {

@@ -7,6 +7,7 @@ import { Spotlight } from "../ui/spotlight-new";
 import { TracingBeam } from "../ui/tracing-beam";
 import Deck from "./pages/Home/components/Deck";
 import { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const HomePage = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -26,7 +27,18 @@ const HomePage = () => {
       <Spotlight duration={11} height={1200} />
       <header>
         <NavBar />
-        <Deck />
+        <AnimatePresence>
+          {!isAtTop && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+            >
+              <Deck isAtTop={isAtTop} />
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
 
       <div className="m-auto overflow-hidden">

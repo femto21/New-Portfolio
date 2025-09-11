@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.884.0",
+    "@aws-sdk/credential-providers": "^3.883.0",
     "@lottiefiles/dotlottie-react": "^0.13.5",
     "@radix-ui/react-navigation-menu": "^1.2.6",
     "@react-three/fiber": "8.13.6",

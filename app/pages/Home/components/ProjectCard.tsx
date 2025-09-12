@@ -18,7 +18,7 @@ const ProjectCard = (props: Project) => {
       <div
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="h-96 w-full relative p-6 pl-0 rounded-2xl flex flex-row hover:shadow-2xl transition-all duration-300 ease-out hover:shadow-violet-500/[0.1]"
+        className="h-96 w-full relative p-6 pl-0 rounded-2xl min-h-96 flex flex-row hover:shadow-2xl transition-all duration-300 ease-out hover:shadow-violet-500/[0.1]"
       >
         <div
           className={`absolute w-full h-full top-0 left-0 bg-white transition-opacity rounded-2xl ease-out duration-300 ${

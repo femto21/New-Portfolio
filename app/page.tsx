@@ -27,18 +27,7 @@ const HomePage = () => {
       <Spotlight duration={11} height={1200} />
       <header>
         <NavBar />
-        <AnimatePresence>
-          {!isAtTop && (
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -10 }}
-              transition={{ duration: 0.4, ease: "easeInOut" }}
-            >
-              <Deck isAtTop={isAtTop} />
-            </motion.div>
-          )}
-        </AnimatePresence>
+        <Deck isAtTop={isAtTop} />
       </header>
 
       <div className="m-auto overflow-hidden">

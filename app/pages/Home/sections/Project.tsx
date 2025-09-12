@@ -58,10 +58,10 @@ const Projects = () => {
     fetchData();
   }, []);
   return (
-    <section className="mx-40">
-      <div className="m-auto w-full">
+    <section className="mx-40 -mt-16 border-amber-500">
+      <div className="m-auto min-h-max  border-solid w-full">
         <p className="text-4xl text-color1 text-shadow">My Projects</p>
-        <div className="mt-10 flex flex-col gap-6 justify-between">
+        <div className="mt-10 flex flex-col gap-6 min-h-[1200px] justify-between">
           {projects.map((project: Project) => {
             return <ProjectCard {...project} key={project.id} />;
           })}

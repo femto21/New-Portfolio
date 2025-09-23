@@ -9,8 +9,8 @@ import { useEffect, useState } from "react";
 
 const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
   return (
-    <div className="h-screen w-full top-0">
-      <div className="absolute flex flex-col gap-4 text-lg top-[20.5%] left-8  items-center z-20">
+    <div id="home" className="h-[720px] border-solid w-full top-0">
+      <div className="absolute flex flex-col gap-4 text-lg top-[15%] left-8  items-center z-20">
         <a
           href="https://github.com/femto21"
           rel="noopener"
@@ -29,7 +29,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
         </a>
         <div className="bg-[#f5efff] h-12 w-[1px] m-auto mt-1 icon-shadow"></div>
       </div>
-      <div className="absolute rotate-90 text-sm top-[23%] right-0 z-20 text-shadow font-clashDisplay">
+      <div className="absolute rotate-90 text-sm top-[17.5%] right-0 z-20 text-shadow font-clashDisplay">
         <a
           href="mailto:arpitgahlot@dal.ca"
           className="nav-color2 transition-all duration-300 ease-out"
@@ -88,7 +88,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
           </AuroraBackground>
         </div>
 
-        <div className="absolute top-[29%] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
+        <div className="absolute top-[22%] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
           <motion.div
             initial={{
               opacity: 0,

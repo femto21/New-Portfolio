@@ -38,7 +38,9 @@ const Experience = () => {
   return (
     <section id="work" className="mx-40 mt-4 border-amber-500">
       <div className="m-auto min-h-max  border-solid w-full">
-        <p className="text-4xl text-color1 text-shadow">My Work</p>
+        <div className="m-auto w-fit">
+          <p className="text-4xl text-color1 text-shadow">My Work</p>
+        </div>
         <div className="mt-6 flex flex-col gap-10">
           {experiences.map((exp, idx) => (
             <motion.div
@@ -47,7 +49,7 @@ const Experience = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: idx * 0.2 }}
               viewport={{ once: true }}
-              className="relative bg-white/5 text-white rounded-3xl p-8 shadow-lg "
+              className="mx-16 relative bg-white/5 text-white rounded-3xl p-8 shadow-lg "
             >
               <div className="flex flex-col items-center text-center">
                 <img

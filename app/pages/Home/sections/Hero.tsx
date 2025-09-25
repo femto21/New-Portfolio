@@ -5,7 +5,6 @@ import { FaCanadianMapleLeaf, FaGithubAlt, FaLinkedin } from "react-icons/fa";
 import { AuroraBackground } from "../../../../ui/aurora-background";
 import MouseAnimation from "../components/MouseAnimation";
 import { motion } from "motion/react";
-import { useEffect, useState } from "react";
 
 const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
   return (

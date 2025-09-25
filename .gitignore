@@ -41,6 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 aws-info.txt
-public/
 data/
 projects.json

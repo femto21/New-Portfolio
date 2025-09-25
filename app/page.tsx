@@ -8,6 +8,7 @@ import { TracingBeam } from "../ui/tracing-beam";
 import Deck from "./pages/Home/components/Deck";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Contact from "./pages/Home/sections/Contact";
 
 const HomePage = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -35,6 +36,7 @@ const HomePage = () => {
           <Hero isAtTop={isAtTop} />
           <Experience />
           <Project />
+          <Contact />
         </TracingBeam>
       </div>
       <footer></footer>

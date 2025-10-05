@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "../ui/theme-provider";
 import localFont from "next/font/local";
 import { Manrope } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );

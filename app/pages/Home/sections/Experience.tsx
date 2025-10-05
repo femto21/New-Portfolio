@@ -36,7 +36,7 @@ const experiences: ExperienceItem[] = [
 
 const Experience = () => {
   return (
-    <section id="work" className="mx-40 mt-16 border-amber-500">
+    <section id="work" className="mx-40 mt-4 border-amber-500">
       <div className="m-auto min-h-max  border-solid w-full">
         <div className="m-auto w-fit">
           <p className="text-4xl text-color1 text-shadow">My Work</p>

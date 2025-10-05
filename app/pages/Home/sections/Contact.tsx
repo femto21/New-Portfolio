@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 
 const BottomGradient = () => {
   return (
@@ -37,11 +38,11 @@ const Contact = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          process.env.SERVICE_ID!,
-          process.env.TEMPLATE_ID!,
+          process.env.NEXT_PUBLIC_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_TEMPLATE_ID!,
           form.current,
           {
-            publicKey: process.env.PUBLIC_KEY,
+            publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
           }
         )
         .then(
@@ -56,51 +57,63 @@ const Contact = () => {
   };
   return (
     <div>
-      <div className="m-auto w-fit">
-        <p className="text-4xl text-color1 text-shadow">Get In Touch</p>
-        <form ref={form} onSubmit={sendEmail}>
-          <LabelInputContainer className="mb-4">
-            <Label htmlFor="name">Name</Label>
-            <Input id="name" placeholder="Tyler" type="text" name="user_name" />
-          </LabelInputContainer>
+      <div className="m-auto my-16 w-fit">
+        <p className="text-4xl text-color1 text-shadow w-fit m-auto">
+          Get In Touch
+        </p>
+        <div className="w-sm">
+          <form ref={form} onSubmit={sendEmail}>
+            <LabelInputContainer className="mb-4">
+              <Label htmlFor="name" className="text-color1 text-shadow-subtle">
+                Name
+              </Label>
+              <Input
+                id="name"
+                placeholder="Tyler"
+                type="text"
+                name="name"
+                required
+              />
+            </LabelInputContainer>
 
-          <LabelInputContainer className="mb-4">
-            <Label htmlFor="email">Email Address</Label>
-            <Input
-              id="email"
-              placeholder="projectmayhem@fc.com"
-              type="email"
-              name="user_email"
-            />
-          </LabelInputContainer>
-          <LabelInputContainer className="mb-4">
-            <Label htmlFor="password">Password</Label>
-            <Input id="password" placeholder="••••••••" type="password" />
-          </LabelInputContainer>
-          <LabelInputContainer className="mb-8">
-            <Label htmlFor="twitterpassword">Your twitter password</Label>
-            <Input
-              id="twitterpassword"
-              placeholder="••••••••"
-              type="twitterpassword"
-            />
-          </LabelInputContainer>
+            <LabelInputContainer className="mb-4">
+              <Label htmlFor="email" className="text-color1 text-shadow-subtle">
+                Email Address
+              </Label>
+              <Input
+                id="email"
+                placeholder="projectmayhem@fc.com"
+                type="email"
+                name="email"
+                required
+              />
+            </LabelInputContainer>
+            <LabelInputContainer className="mb-4">
+              <Label
+                htmlFor="message"
+                className="text-color1 text-shadow-subtle"
+              >
+                Message
+              </Label>
+              <Textarea
+                id="message"
+                placeholder="write your message here :)"
+                name="message"
+                className="bg-white text-black"
+                required
+              />
+            </LabelInputContainer>
 
-          <button
-            className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
-            type="submit"
-          >
-            Sign up &rarr;
-            <BottomGradient />
-          </button>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
+            <button
+              className="group/btn relative block h-10 w-full cursor-pointer rounded-md bg-gradient-to-br from-purple-500/30 to-indigo-500/30 font-medium text-white text-shadow shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset]"
+              type="submit"
+              value="Send"
+            >
+              Send Message &rarr;
+              <BottomGradient />
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

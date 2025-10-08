@@ -6,6 +6,9 @@
 }
 
 @layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
   /* globals.css */
   .background-aurora {
     position: fixed;

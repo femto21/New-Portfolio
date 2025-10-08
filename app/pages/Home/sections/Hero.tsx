@@ -1,15 +1,31 @@
 "use client";
 
 import { TbSchool } from "react-icons/tb";
-import { FaCanadianMapleLeaf, FaGithubAlt, FaLinkedin } from "react-icons/fa";
+import {
+  FaCanadianMapleLeaf,
+  FaDiscord,
+  FaGithubAlt,
+  FaInstagram,
+  FaLinkedin,
+} from "react-icons/fa";
 import { AuroraBackground } from "../../../../ui/aurora-background";
 import MouseAnimation from "../components/MouseAnimation";
 import { motion } from "motion/react";
+import { IoIosMail } from "react-icons/io";
 
 const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
   return (
     <div id="home" className="h-[720px] border-solid w-full top-0">
-      <div className="absolute flex flex-col gap-4 text-lg top-[10.5%] left-8  items-center z-20">
+      <div className="absolute flex flex-col gap-4 text-lg top-[9%] left-8  items-center z-20">
+        <a
+          href="http://www.discord.com/users/530748472278646805"
+          rel="noopener"
+          target="_blank"
+          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
+        >
+          <FaDiscord />
+        </a>
+
         <a
           href="https://github.com/femto21"
           rel="noopener"
@@ -26,14 +42,31 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
         >
           <FaLinkedin />
         </a>
-        <div className="bg-[#f5efff] h-12 w-[1px] m-auto mt-1 icon-shadow"></div>
+        <a
+          href="https://www.instagram.com/arpitght/"
+          rel="noopener"
+          target="_blank"
+          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
+        >
+          <FaInstagram />
+        </a>
+        <a
+          href="mailto:arpitgahlot@dal.ca"
+          rel="noopener"
+          target="_blank"
+          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
+        >
+          <IoIosMail />
+        </a>
+
+        <div className="bg-[#f5efff] h-18 w-[1px] m-auto mt-1 icon-shadow"></div>
       </div>
       <div className="absolute rotate-90 text-sm top-[13%] right-0 z-20 text-shadow font-clashDisplay">
         <a
-          href="mailto:arpitgahlot@dal.ca"
+          href="#work"
           className="nav-color2 transition-all duration-300 ease-out"
         >
-          Contact &nbsp; Me
+          Scroll &nbsp; Down
         </a>
       </div>
       <div className="w-full h-auto font-clashDisplay flex flex-row gap-8 ">
@@ -87,7 +120,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
           </AuroraBackground>
         </div>
 
-        <div className="absolute top-[17.5%] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
+        <div className="absolute top-[17%] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
           <motion.div
             initial={{
               opacity: 0,

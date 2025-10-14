@@ -7,8 +7,8 @@ import { Spotlight } from "../ui/spotlight-new";
 import { TracingBeam } from "../ui/tracing-beam";
 import Deck from "./pages/Home/components/Deck";
 import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 import Contact from "./pages/Home/sections/Contact";
+import About from "./pages/Home/sections/About";
 
 const HomePage = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -34,6 +34,7 @@ const HomePage = () => {
       <div className="m-auto overflow-hidden">
         <TracingBeam>
           <Hero isAtTop={isAtTop} />
+          <About />
           <Experience />
           <Project />
           <Contact />

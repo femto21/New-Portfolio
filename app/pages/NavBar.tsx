@@ -21,7 +21,7 @@ const NavBar = () => {
             </div>
             <div className="ml-12 flex gap-8 justify-between items-center">
               <Link
-                href="/about"
+                href="#about"
                 className="font-bold transition-all  duration-150 nav-color2 ease-out text-shadow"
               >
                 About

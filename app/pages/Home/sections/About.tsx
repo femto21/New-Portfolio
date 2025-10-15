@@ -1,3 +1,5 @@
+import StackIcon from "tech-stack-icons";
+
 const About = () => {
   return (
     <section id="about" className="mx-40 mt-4 mb-40 border-amber-500">
@@ -22,32 +24,65 @@ const About = () => {
             <p className="text-xl text-color1 text-shadow-subtle mb-4">
               My Tech Stack
             </p>
-            <div className="grid grid-cols-4 grid-rows-1 gap-4 ">
-              <div className="col-start-1 px-8 py-4 bg-white/10 rounded-xl">
+            <div className="grid grid-cols-2 grid-rows-2 gap-4 ">
+              <div className=" px-8 py-4 bg-white/10 rounded-xl">
                 <p className="text-color1 text-shadow-subtle">Languages</p>
-                <ul className="text-sm mt-2 text-shadow-subtle flex flex-col gap-2 ">
-                  <li>Java</li>
-                  <li>Python</li>
-                  <li>Javascript</li>
-                  <li>Typescript</li>
-                  <li>C#</li>
-                  <li>C/C++</li>
-                  <li>PHP</li>
-                </ul>
+                <div className="text-sm mt-2 text-shadow-subtle grid grid-cols-4 gap-none">
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="java" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="python" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="html5" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="css3" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="js" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="typescript" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="c#" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="c++" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="php" />
+                  </div>
+                </div>
               </div>
-              <div className="col-start-2 px-8 py-4 bg-white/10 rounded-xl">
+              <div className=" px-8 py-4 bg-white/10 rounded-xl">
                 <p className="text-color1 text-shadow-subtle">Frameworks</p>
                 <ul className="text-sm flex flex-col gap-2 text-shadow-subtle">
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>Next.js</li>
-                  <li>.NET</li>
-                  <li>Vue.js</li>
-                  <li>JUnit</li>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="nodejs" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="expressjs" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="nextjs2" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="netcore" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="vuejs" />
+                  </div>
+                  <div style={{ height: 40, width: 40 }}>
+                    <img src="Junit.png" />
+                  </div>
+
                   <li>Aseba</li>
                 </ul>
               </div>
-              <div className="col-start-3 px-8 py-4 bg-white/10 rounded-xl">
+              <div className=" px-8 py-4 bg-white/10 rounded-xl">
                 <p className="text-color1 text-shadow-subtle">Libraries</p>
                 <ul className="text-sm flex flex-col gap-2 text-shadow-subtle">
                   <li>React</li>
@@ -60,7 +95,7 @@ const About = () => {
                   <li>Clerk</li>
                 </ul>
               </div>
-              <div className="col-start-4 px-8 py-4 bg-white/10 rounded-xl">
+              <div className=" px-8 py-4 bg-white/10 rounded-xl">
                 <p className="text-color1 text-shadow-subtle">Dev Tools</p>
                 <ul className="text-sm flex flex-col gap-2 text-shadow-subtle">
                   <li>Git / GitHub / GitLab</li>

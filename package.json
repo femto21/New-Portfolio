@@ -30,6 +30,7 @@
     "simplex-noise": "^4.0.3",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-textshadow": "^2.1.3",
+    "tech-stack-icons": "^3.3.2",
     "three": "^0.175.0",
     "tw-animate-css": "^1.2.5"
   },

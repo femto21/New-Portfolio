@@ -59,15 +59,15 @@ const About = () => {
               </div>
               <div className=" px-8 py-4 bg-white/10 rounded-xl">
                 <p className="text-color1 text-shadow-subtle">Frameworks</p>
-                <ul className="text-sm flex flex-col gap-2 text-shadow-subtle">
+                <div className="text-sm mt-2 text-shadow-subtle grid grid-cols-4 gap-none">
                   <div style={{ height: 40, width: 40 }}>
                     <StackIcon name="nodejs" />
                   </div>
                   <div style={{ height: 40, width: 40 }}>
-                    <StackIcon name="expressjs" />
+                    <img src="Express.png" />
                   </div>
                   <div style={{ height: 40, width: 40 }}>
-                    <StackIcon name="nextjs2" />
+                    <img src="Next.js.png" />
                   </div>
                   <div style={{ height: 40, width: 40 }}>
                     <StackIcon name="netcore" />
@@ -78,9 +78,10 @@ const About = () => {
                   <div style={{ height: 40, width: 40 }}>
                     <img src="Junit.png" />
                   </div>
-
-                  <li>Aseba</li>
-                </ul>
+                  <div style={{ height: 40, width: 40 }}>
+                    <StackIcon name="pytorch" />
+                  </div>
+                </div>
               </div>
               <div className=" px-8 py-4 bg-white/10 rounded-xl">
                 <p className="text-color1 text-shadow-subtle">Libraries</p>
@@ -98,13 +99,16 @@ const About = () => {
               <div className=" px-8 py-4 bg-white/10 rounded-xl">
                 <p className="text-color1 text-shadow-subtle">Dev Tools</p>
                 <ul className="text-sm flex flex-col gap-2 text-shadow-subtle">
-                  <li>Git / GitHub / GitLab</li>
-                  <li>AWS</li>
-                  <li>Azure</li>
-                  <li>Google Cloud</li>
-                  <li>Docker</li>
-                  <li>Postman</li>
-                  <li>MongoDB</li>
+                  <StackIcon name="github" />
+                  <StackIcon name="gitlab" />
+                  <StackIcon name="aws" />
+                  <StackIcon name="azure" />
+                  <StackIcon name="gcloud" />
+                  <StackIcon name="firebase" />
+                  <StackIcon name="supabase" />
+                  <StackIcon name="docker" />
+                  <StackIcon name="postman" />
+                  <StackIcon name="mongodb" />
                 </ul>
               </div>
             </div>

@@ -8,8 +8,8 @@ import {
   FaInstagram,
   FaLinkedin,
 } from "react-icons/fa";
-import { AuroraBackground } from "../../../../ui/aurora-background";
-import MouseAnimation from "../components/MouseAnimation";
+import { AuroraBackground } from "../../ui/aurora-background";
+import MouseAnimation from "../../components/MouseAnimation";
 import { motion } from "motion/react";
 import { IoIosMail } from "react-icons/io";
 

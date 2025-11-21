@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3";
 import { fromCognitoIdentityPool } from "@aws-sdk/credential-providers";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 
 const client = new S3Client({
   region: "ca-central-1",

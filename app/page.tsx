@@ -1,14 +1,14 @@
 "use client";
-import Experience from "./pages/Home/sections/Experience";
-import Hero from "./pages/Home/sections/Hero";
-import Project from "./pages/Home/sections/Project";
-import NavBar from "./pages/NavBar";
+import Experience from "./sections/Experience";
+import Hero from "./sections/Hero";
+import Project from "./sections/Project";
+import NavBar from "../components/NavBar";
 import { Spotlight } from "../ui/spotlight-new";
 import { TracingBeam } from "../ui/tracing-beam";
-import Deck from "./pages/Home/components/Deck";
+import Deck from "../components/Deck";
 import { useEffect, useState } from "react";
-import Contact from "./pages/Home/sections/Contact";
-import About from "./pages/Home/sections/About";
+import Contact from "./sections/Contact";
+import About from "./sections/About";
 
 const HomePage = () => {
   const [isAtTop, setIsAtTop] = useState(true);

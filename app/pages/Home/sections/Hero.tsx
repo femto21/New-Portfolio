@@ -16,7 +16,7 @@ import { IoIosMail } from "react-icons/io";
 const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
   return (
     <div id="home" className="h-[720px] border-solid w-full top-0">
-      <div className="absolute flex flex-col gap-4 text-lg top-[380px] left-8  items-center z-20">
+      <div className="absolute flex flex-col gap-4 text-lg top-[340px] left-8  items-center z-20">
         <a
           href="http://www.discord.com/users/530748472278646805"
           rel="noopener"
@@ -61,7 +61,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
 
         <div className="bg-[#f5efff] h-18 w-[1px] m-auto mt-1 icon-shadow"></div>
       </div>
-      <div className="absolute rotate-90 text-sm top-[500px] right-0 z-20 text-shadow font-clashDisplay">
+      <div className="absolute rotate-90 text-sm top-[470px] right-0 z-20 text-shadow font-clashDisplay">
         <a
           href="#work"
           className="nav-color2 transition-all duration-300 ease-out"

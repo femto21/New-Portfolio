@@ -2,14 +2,14 @@ import StackIcon from "tech-stack-icons";
 
 const About = () => {
   return (
-    <section id="about" className="mx-40 mt-4 mb-40 border-amber-500">
+    <section id="about" className="mx-40 mb-40 border-amber-500">
       <div className="m-auto min-h-max border-solid w-3/4">
-        <div className=" px-8 py-4 bg-white/10 rounded-xl">
+        <div>
           <div className="m-auto w-fit">
             <p className="text-4xl text-color1 text-shadow">About Me</p>
           </div>
           <div className="mt-4">
-            <p className="text-color2 text-shadow-subtle">
+            <p className="text-color2 text-center text-shadow-subtle">
               My name is Arpit Gahlot. I am studying Computer Science at
               Dalhousie University and currently in my third year. I really like
               coding and working with the cloud, and recently I have been into
@@ -22,7 +22,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="mt-4">
+        <div className="mt-8">
           <div className="flex flex-col items-center">
             <p className="text-xl text-color1 text-shadow-subtle mb-4">
               My Tech Stack

@@ -120,7 +120,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
           </AuroraBackground>
         </div>
 
-        <div className="absolute top-[640px] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
+        <div className="absolute top-[600px] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
           <motion.div
             initial={{
               opacity: 0,

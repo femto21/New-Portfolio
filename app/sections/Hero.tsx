@@ -12,130 +12,127 @@ import { AuroraBackground } from "../../ui/aurora-background";
 import MouseAnimation from "../../components/MouseAnimation";
 import { motion } from "motion/react";
 import { IoIosMail } from "react-icons/io";
+import Divider from "@/components/Divider";
 
 const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
   return (
-    <div id="home" className="h-[720px] border-solid w-full top-0">
-      <div className="absolute flex flex-col gap-4 text-lg top-[340px] left-8  items-center z-20">
-        <a
-          href="http://www.discord.com/users/530748472278646805"
-          rel="noopener"
-          target="_blank"
-          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
-        >
-          <FaDiscord />
-        </a>
-
-        <a
-          href="https://github.com/femto21"
-          rel="noopener"
-          target="_blank"
-          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
-        >
-          <FaGithubAlt />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/arpitgahlot/"
-          rel="noopener"
-          target="_blank"
-          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="https://www.instagram.com/arpitght/"
-          rel="noopener"
-          target="_blank"
-          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          href="mailto:arpitgahlot@dal.ca"
-          rel="noopener"
-          target="_blank"
-          className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300 text-xl"
-        >
-          <IoIosMail />
-        </a>
-
-        <div className="bg-[#f5efff] h-18 w-[1px] m-auto mt-1 icon-shadow"></div>
-      </div>
-      <div className="absolute rotate-90 text-sm top-[470px] right-0 z-20 text-shadow font-clashDisplay">
-        <a
-          href="#work"
-          className="nav-color2 transition-all duration-300 ease-out"
-        >
-          Scroll &nbsp; Down
-        </a>
-      </div>
-      <div className="w-full h-auto font-clashDisplay flex flex-row gap-8 ">
-        <div className="w-full mx-40 mt-26 bg-gray-950/20  rounded-4xl overflow-hidden">
-          <AuroraBackground
-            data-theme="dark"
-            className="object-contain w-full h-full rounded-4xl"
+    <>
+      <div className="h-[666px] border-solid w-full top-0">
+        <div className="absolute flex flex-col gap-4 text-lg top-[340px] left-8  items-center z-20">
+          <a
+            href="http://www.discord.com/users/530748472278646805"
+            rel="noopener"
+            target="_blank"
+            className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
           >
-            <div className="p-12 w-full h-full  flex flex-col z-10 ">
-              <div className="flex flex-col">
-                <div className="pb-8 border-b-[1.25px] border-[#a594f9]">
-                  <p className="mb-4 text-5xl text-color2 text-shadow font-bold">
-                    Greetings,
-                  </p>
-                  <p className="text-4xl text-color1 text-shadow font-medium">
-                    my name is Arpit Gahlot
-                  </p>
-                </div>
-              </div>
-              <div className="pt-4 pb-4 flex flex-row justify-around border-b-[1.25px] border-[#a594f9]">
-                <div className="w-100 border-r-[1.25px] border-[#a594f9] mr-4">
-                  <p className="text-color2 text-l text-shadow">
-                    Software Engineer
-                  </p>
-                </div>
-                <div className="w-100 border-r-[1.25px] border-[#a594f9] mr-4">
-                  <p className="text-color2 text-l text-shadow">
-                    Cloud Architect
-                  </p>
-                </div>
-                <div className="w-100 ">
-                  <p className="text-color2 text-l text-shadow">
-                    AI/ML Engineer
-                  </p>
-                </div>
-              </div>
-              <div className="flex flex-row pt-6">
-                <div className="w-full border-r-[1.25px] border-[#a594f9] mr-4">
-                  <p className="text-2xl text-color2 text-shadow flex flex-row items-center gap-1.5">
-                    <TbSchool />
-                    Dalhousie University
-                  </p>
-                </div>
-                <div className="w-full">
-                  <p className="text-2xl text-color2 text-shadow flex flex-row gap-1.5 items-center">
-                    <FaCanadianMapleLeaf /> Canada
-                  </p>
-                </div>
-              </div>
-            </div>
-          </AuroraBackground>
+            <FaDiscord />
+          </a>
+
+          <a
+            href="https://github.com/femto21"
+            rel="noopener"
+            target="_blank"
+            className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
+          >
+            <FaGithubAlt />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/arpitgahlot/"
+            rel="noopener"
+            target="_blank"
+            className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="mailto:arpitgahlot@dal.ca"
+            rel="noopener"
+            target="_blank"
+            className="icon-shadow hover:-translate-y-1 nav-color2 transition-all duration-300 text-xl"
+          >
+            <IoIosMail />
+          </a>
+
+          <div className="bg-[#f5efff] h-18 w-[1px] m-auto mt-1 icon-shadow"></div>
         </div>
-
-        <div className="absolute top-[600px] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
-          <motion.div
-            initial={{
-              opacity: 0,
-            }}
-            animate={{
-              opacity: isAtTop ? 1 : 0,
-              transition: { duration: 1 },
-            }}
-            className="text-5xl icon-shadow opacity-80"
+        <div className="absolute rotate-90 text-sm top-[470px] right-0 z-20 text-shadow font-clashDisplay">
+          <a
+            href="#work"
+            className="nav-color2 transition-all duration-300 ease-out"
           >
-            <MouseAnimation />
-          </motion.div>
+            Scroll &nbsp; Down
+          </a>
+        </div>
+        <div className="w-full h-auto font-clashDisplay flex flex-row gap-8 ">
+          <div className="w-full mx-40 mt-26 bg-gray-950/20  rounded-4xl overflow-hidden">
+            <AuroraBackground
+              data-theme="dark"
+              className="object-contain w-full h-full rounded-4xl"
+            >
+              <div className="p-12 w-full h-full  flex flex-col z-10 ">
+                <div className="flex flex-col">
+                  <div className="pb-8 border-b-[1.25px] border-[#a594f9]">
+                    <p className="mb-4 text-5xl text-color2 text-shadow font-bold">
+                      Greetings,
+                    </p>
+                    <p className="text-4xl text-color1 text-shadow font-medium">
+                      my name is Arpit Gahlot
+                    </p>
+                  </div>
+                </div>
+                <div className="pt-4 pb-4 flex flex-row justify-around border-b-[1.25px] border-[#a594f9]">
+                  <div className="w-100 border-r-[1.25px] border-[#a594f9] mr-4">
+                    <p className="text-color2 text-l text-shadow">
+                      Software Engineer
+                    </p>
+                  </div>
+                  <div className="w-100 border-r-[1.25px] border-[#a594f9] mr-4">
+                    <p className="text-color2 text-l text-shadow">
+                      Cloud Architect
+                    </p>
+                  </div>
+                  <div className="w-100 ">
+                    <p className="text-color2 text-l text-shadow">
+                      AI/ML Engineer
+                    </p>
+                  </div>
+                </div>
+                <div className="flex flex-row pt-6">
+                  <div className="w-full border-r-[1.25px] border-[#a594f9] mr-4">
+                    <p className="text-2xl text-color2 text-shadow flex flex-row items-center gap-1.5">
+                      <TbSchool />
+                      Dalhousie University
+                    </p>
+                  </div>
+                  <div className="w-full">
+                    <p className="text-2xl text-color2 text-shadow flex flex-row gap-1.5 items-center">
+                      <FaCanadianMapleLeaf /> Canada
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </AuroraBackground>
+          </div>
+
+          <div className="absolute top-[600px] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
+            <motion.div
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: isAtTop ? 1 : 0,
+                transition: { duration: 1 },
+              }}
+              className="text-5xl icon-shadow opacity-80"
+            >
+              <MouseAnimation />
+            </motion.div>
+          </div>
         </div>
       </div>
-    </div>
+      <Divider />
+    </>
   );
 };
 export default Hero;

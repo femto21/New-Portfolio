@@ -9,6 +9,8 @@ import Deck from "../components/Deck";
 import { useEffect, useState } from "react";
 import Contact from "./sections/Contact";
 import About from "./sections/About";
+import Footer from "@/components/Footer";
+import Divider from "@/components/Divider";
 
 const HomePage = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -26,10 +28,8 @@ const HomePage = () => {
   return (
     <>
       <Spotlight duration={11} height={1200} />
-      <header>
-        <NavBar />
-        <Deck isAtTop={isAtTop} />
-      </header>
+      <NavBar />
+      <Deck isAtTop={isAtTop} />
 
       <div className="m-auto overflow-hidden">
         <TracingBeam>
@@ -40,7 +40,9 @@ const HomePage = () => {
           <Contact />
         </TracingBeam>
       </div>
-      <footer></footer>
+      <footer className="mt-16">
+        <Footer />
+      </footer>
     </>
   );
 };

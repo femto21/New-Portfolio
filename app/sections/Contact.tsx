@@ -119,7 +119,7 @@ const Contact = () => {
 
             {!loading ? (
               <button
-                className="group/btn relative block h-10 w-full cursor-pointer rounded-md bg-gradient-to-br from-purple-500/30 to-indigo-500/30 font-medium text-white text-shadow shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset]"
+                className="group/btn relative block h-10 w-48 cursor-pointer rounded-md bg-[#5742af] font-medium text-white text-shadow"
                 type="submit"
                 value="Send"
               >
@@ -128,7 +128,7 @@ const Contact = () => {
               </button>
             ) : (
               <button
-                className="group/plbtn relative block h-10 w-full cursor-pointer rounded-md bg-gradient-to-br from-purple-500/30 to-indigo-500/30 font-medium text-white text-shadow shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset]"
+                className="group/plbtn relative block h-10 w-full cursor-pointer rounded-md bg-gradient-to-br from-[#a594f9] to-[#9c88ff] font-medium text-white text-shadow"
                 type="submit"
                 value="Send"
               >

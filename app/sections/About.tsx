@@ -3,15 +3,18 @@ import Frameworks from "../../components/icons/Frameworks";
 import Languages from "../../components/icons/Languages";
 import Libraries from "../../components/icons/Libraries";
 import DevTools from "../../components/icons/DevTools";
+import { SparklesCore } from "@/components/ui/sparkles";
+import Divider from "@/components/Divider";
 
 const About = () => {
   return (
-    <section id="about" className="mx-40 mb-40 border-amber-500">
+    <section id="about" className="mt-16 mb-20 border-amber-500">
       <div className="m-auto min-h-max border-solid w-3/4">
-        <div>
+        <div className="relative">
           <div className="m-auto w-fit">
             <p className="text-4xl text-color1 text-shadow">About Me</p>
           </div>
+
           <div className="mt-4">
             <p className="text-color2 text-center text-shadow-subtle">
               My name is Arpit Gahlot. I am studying Computer Science at

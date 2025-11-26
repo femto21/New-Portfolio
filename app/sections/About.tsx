@@ -8,11 +8,16 @@ import Divider from "@/components/Divider";
 
 const About = () => {
   return (
-    <section id="about" className="mt-16 mb-20 border-amber-500">
+    <section id="about" className="mt-24 border-amber-500">
       <div className="m-auto min-h-max border-solid w-3/4">
         <div className="relative">
           <div className="m-auto w-fit">
-            <p className="text-4xl text-color1 text-shadow">About Me</p>
+            <p className="text-l mb-1 text-color2 text-shadow w-fit m-auto">
+              Get To Know
+            </p>
+            <p className="text-3xl text-color1 text-shadow w-fit m-auto">
+              About Me
+            </p>
           </div>
 
           <div className="mt-4">

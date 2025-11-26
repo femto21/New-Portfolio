@@ -34,7 +34,7 @@ const NavBar = () => {
 
           <div className="flex justify-between gap-6 ">
             <Link
-              href="#experience"
+              href="#work"
               className="font-medium nav-color1 transition-all  duration-150 ease-out text-shadow-subtle"
             >
               Experience

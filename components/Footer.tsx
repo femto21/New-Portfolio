@@ -65,7 +65,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
           </div>
-          <div className="mt-8 text-xs">
+          <div className="mt-7 opacity-40 text-xs">
             Copyright © Arpit Gahlot. All rights reserved.
           </div>
         </div>

@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { CiMail } from "react-icons/ci";
 import { IoMdDownload } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 
 const BottomGradient = () => {
   return (
@@ -50,94 +51,101 @@ const Contact = () => {
     }
   };
   return (
-    <div>
-      <div id="contact" className="m-auto my-16 w-3/5">
-        <p className="text-4xl text-color1 text-shadow w-fit m-auto">
-          Get In Touch
-        </p>
-        <div className="mt-16  border-amber-300 flex flex-row items-center justify-around ">
-          <div className="flex flex-col justify-between items-center gap-4">
-            <div className="h-[100%] w-[100%] bg-white/10 px-8 py-4 rounded-2xl flex flex-col justify-around items-center">
-              <div className="mb-2">
-                <CiMail className="text-3xl text-color2 icon-shadow" />
-              </div>
-
-              <div className="text-color2 text-shadow text-xl">Email</div>
-              <div className="text-color2 text-shadow-subtle text-l">
-                arpitgahlot@dal.ca
-              </div>
-              <a
-                href="mailto:arpitgahlot@dal.ca"
-                className="nav-color1 text-shadow-subtle"
-              >
-                Send message
-              </a>
-            </div>
-            <div className="h-[100%] w-[100%] bg-white/10 px-8 py-4 rounded-2xl flex flex-col justify-around items-center">
-              <div className="mb-2">
-                <IoMdDownload className="text-3xl text-color2 icon-shadow" />
-              </div>
-              <div className="text-color2 text-shadow text-xl">My Resume</div>
-
-              <a
-                href="mailto:arpitgahlot@dal.ca"
-                className="nav-color1 text-shadow-subtle"
-              >
-                Download
-              </a>
+    <div id="contact" className="m-auto h-[90vh] mt-30 mb-10 w-3/5">
+      <p className="text-l mb-1 text-color2 text-shadow w-fit m-auto">
+        Get In Touch
+      </p>
+      <p className="text-3xl text-color1 text-shadow w-fit m-auto">
+        Contact Me
+      </p>
+      <div className="mt-16 h-[70%] border-amber-300 flex flex-row  justify-around ">
+        <div className="flex flex-col justify-between items-center gap-8 h-auto">
+          <div className="h-[100%] w-[100%] bg-white/10 px-2 py-2 rounded-2xl flex flex-col justify-around items-center">
+            <div className="text-color2 w-full text-shadow-subtle text-center  text-sm">
+              Feel free to contact<br></br> me regarding anything<br></br> or
+              just to say hi
             </div>
           </div>
-          <form
-            ref={form}
-            onSubmit={sendEmail}
-            className="w-3/5  h-full gap-8 flex flex-col justify-between"
-          >
-            <input
-              id="name"
-              placeholder="Your full name"
-              type="text"
-              name="name"
-              className="h-12 shadow-input dark:placeholder-text-neutral-600 flex w-full rounded-md border-none bg-transparent px-3 py-2 text-sm text-black transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
-              required
-            />
+          <div className="h-[100%] w-[100%] bg-white/10 px-8 py-4 rounded-2xl flex flex-col justify-around items-center">
+            <div className="mb-2">
+              <CiMail className="text-3xl text-color2 icon-shadow" />
+            </div>
 
-            <input
-              id="email"
-              placeholder="Your Email"
-              type="email"
-              name="email"
-              className="h-12 shadow-input dark:placeholder-text-neutral-600 flex w-full rounded-md border-none bg-transparent px-3 py-2 text-sm text-black transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
-              required
-            />
-            <textarea
-              id="message"
-              placeholder="write your message here :)"
-              name="message"
-              className="border-input dark:placeholder-text-neutral-600 resize-none focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 flex field-sizing-content min-h-16 w-full rounded-md bg-transparent px-3 py-2 text-base shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[1px] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
-              required
-            />
+            <div className="text-color2 text-shadow text-xl">Email</div>
+            <div className="text-color2 text-shadow-subtle text-l">
+              arpitgahlot@dal.ca
+            </div>
+            <a
+              href="mailto:arpitgahlot@dal.ca"
+              className="nav-color1 text-shadow-subtle"
+            >
+              Send message
+            </a>
+          </div>
+          <div className="h-[100%] w-[100%] bg-white/10 px-8 py-4 rounded-2xl flex flex-col justify-around items-center">
+            <div className="mb-2">
+              <FaLinkedin className="text-2xl text-color2 icon-shadow" />
+            </div>
+            <div className="text-color2 text-shadow text-l">LinkedIn</div>
 
-            {!loading ? (
-              <button
-                className="group/btn relative block h-10 w-48 cursor-pointer rounded-md bg-[#5742af] font-medium text-white text-shadow"
-                type="submit"
-                value="Send"
-              >
-                Send Message &rarr;
-                <BottomGradient />
-              </button>
-            ) : (
-              <button
-                className="group/plbtn relative block h-10 w-full cursor-pointer rounded-md bg-gradient-to-br from-[#a594f9] to-[#9c88ff] font-medium text-white text-shadow"
-                type="submit"
-                value="Send"
-              >
-                Sending...
-                <BottomGradient />
-              </button>
-            )}
-          </form>
+            <a
+              href="https://linkedin.com/in/arpitgahlot/"
+              className="nav-color1 text-shadow-subtle"
+            >
+              Connect
+            </a>
+          </div>
         </div>
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="w-3/5  h-full gap-8 flex flex-col justify-between"
+        >
+          <input
+            id="name"
+            placeholder="Your full name"
+            type="text"
+            name="name"
+            className="h-12 shadow-input dark:placeholder-text-neutral-600 flex w-full rounded-md border-[1px] border-white/50 bg-transparent px-3 py-2 text-sm text-white transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
+            required
+          />
+
+          <input
+            id="email"
+            placeholder="Your Email"
+            type="email"
+            name="email"
+            className="h-12 shadow-input  flex w-full rounded-md border-[1px] border-white/50 bg-transparent px-3 py-2 text-sm text-white transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
+            required
+          />
+          <textarea
+            id="message"
+            placeholder="Write your message here :)"
+            name="message"
+            className="h-48 shadow-input px-3 py-2 text-sm rounded-md dark:placeholder-text-neutral-600 border-[1px] border-white/50 resize-none transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
+            required
+          />
+
+          {!loading ? (
+            <button
+              className="group/btn relative block h-10 w-48 cursor-pointer rounded-md bg-[#5742af] font-medium text-white text-shadow"
+              type="submit"
+              value="Send"
+            >
+              Send Message &rarr;
+              <BottomGradient />
+            </button>
+          ) : (
+            <button
+              className="group/plbtn relative block h-10 w-full cursor-pointer rounded-md bg-gradient-to-br from-[#a594f9] to-[#9c88ff] font-medium text-white text-shadow"
+              type="submit"
+              value="Send"
+            >
+              Sending...
+              <BottomGradient />
+            </button>
+          )}
+        </form>
       </div>
     </div>
   );

@@ -58,10 +58,15 @@ const Projects = () => {
     fetchData();
   }, []);
   return (
-    <section id="projects" className="mx-40 mt-16 border-amber-500">
+    <section id="projects" className="mx-40 mt-30 border-amber-500">
       <div className="m-auto min-h-max border-solid w-full">
         <div className="m-auto w-fit">
-          <p className="text-4xl text-color1 text-shadow">My Projects</p>
+          <p className="text-l mb-1 text-color2 text-shadow w-fit m-auto">
+            Things That I Built
+          </p>
+          <p className="text-3xl text-color1 text-shadow w-fit m-auto">
+            My Projects
+          </p>
         </div>
         <div className="mt-10 flex flex-col gap-6 min-h-[1200px] justify-between">
           {projects.map((project: Project) => {

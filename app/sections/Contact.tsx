@@ -51,14 +51,17 @@ const Contact = () => {
     }
   };
   return (
-    <div id="contact" className="m-auto h-[90vh] mt-30 mb-10 w-3/5">
+    <div
+      id="contact"
+      className="mx-8 lg:mx-auto h-[90vh] mt-30 mb-10  lg:w-3/5"
+    >
       <p className="text-l mb-1 text-color2 text-shadow w-fit m-auto">
         Get In Touch
       </p>
       <p className="text-3xl text-color1 text-shadow w-fit m-auto">
         Contact Me
       </p>
-      <div className="mt-16 h-[70%] border-amber-300 flex flex-row  justify-around ">
+      <div className="mt-16 ml-0 lg:h-[70%] border-amber-300 flex flex-row gap-6 lg:mr-0 justify-around ">
         <div className="flex flex-col justify-between items-center gap-8 h-auto">
           <div className="h-[100%] w-[100%] bg-white/10 px-2 py-2 rounded-2xl flex flex-col justify-around items-center">
             <div className="text-color2 w-full text-shadow-subtle text-center  text-sm">
@@ -128,7 +131,7 @@ const Contact = () => {
 
           {!loading ? (
             <button
-              className="group/btn relative block h-10 w-48 cursor-pointer rounded-md bg-[#5742af] font-medium text-white text-shadow"
+              className="group/btn relative block h-10 lg:w-48 cursor-pointer rounded-md bg-[#5742af] font-medium text-white text-shadow"
               type="submit"
               value="Send"
             >
@@ -137,7 +140,7 @@ const Contact = () => {
             </button>
           ) : (
             <button
-              className="group/plbtn relative block h-10 w-full cursor-pointer rounded-md bg-gradient-to-br from-[#a594f9] to-[#9c88ff] font-medium text-white text-shadow"
+              className="group/plbtn relative block h-10 lg:w-48 cursor-pointer rounded-md bg-gradient-to-br from-[#a594f9] to-[#9c88ff] font-medium text-white text-shadow"
               type="submit"
               value="Send"
             >

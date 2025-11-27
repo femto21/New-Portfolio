@@ -14,6 +14,19 @@ import Divider from "@/components/Divider";
 
 const HomePage = () => {
   const [isAtTop, setIsAtTop] = useState(true);
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const checkWidth = () => {
+      setIsDesktop(window.innerWidth >= 1024);
+    };
+
+    checkWidth(); // run once
+    window.addEventListener("resize", checkWidth);
+
+    return () => window.removeEventListener("resize", checkWidth);
+  }, []);
+
   useEffect(() => {
     const handleScroll = () => {
       setIsAtTop(window.scrollY < 50);
@@ -29,7 +42,7 @@ const HomePage = () => {
     <>
       <Spotlight duration={11} height={1200} />
       <NavBar />
-      <Deck isAtTop={isAtTop} />
+      {isDesktop && <Deck isAtTop={isAtTop} />}
 
       <div className="m-auto overflow-hidden">
         <TracingBeam>

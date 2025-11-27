@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="mt-8 w-fit text-color1 text-4xl font-clashDisplay text-shadow">
             Arpit Gahlot
           </div>
-          <div className="mt-8 text-sm w-[30vw] flex flex-row justify-between">
+          <div className="mt-8 gap-2 lg:gap-0 text-sm lg:w-[30vw] flex flex-col lg:flex-row justify-between">
             <div>
               <a className="nav-color2 text-shadow-subtle" href="#home">
                 Home

@@ -18,7 +18,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
   return (
     <>
       <div className="h-[666px] border-solid w-full top-0">
-        <div className="absolute flex flex-col gap-4 text-lg top-[340px] left-8  items-center z-20">
+        <div className="hidden md:hidden lg:flex absolute flex-col gap-4 text-lg top-[340px] left-8  items-center z-20">
           <a
             href="http://www.discord.com/users/530748472278646805"
             rel="noopener"
@@ -59,13 +59,13 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
         <div className="absolute rotate-90 text-sm top-[470px] right-0 z-20 text-shadow font-clashDisplay">
           <a
             href="#work"
-            className="nav-color2 transition-all duration-300 ease-out"
+            className="hidden md:hidden lg:block nav-color2 transition-all duration-300 ease-out"
           >
             Scroll &nbsp; Down
           </a>
         </div>
         <div className="w-full h-auto font-clashDisplay flex flex-row gap-8 ">
-          <div className="w-full mx-40 mt-26 bg-gray-950/20  rounded-4xl overflow-hidden">
+          <div className="w-full mx-10 md:mx-20 lg:mx-40 mt-26 bg-gray-950/20  rounded-4xl overflow-hidden">
             <AuroraBackground
               data-theme="dark"
               className="object-contain w-full h-full rounded-4xl"
@@ -115,7 +115,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
             </AuroraBackground>
           </div>
 
-          <div className="absolute top-[600px] left-1/2 -translate-x-5 flex z-50 flex-row items-center gap-0">
+          <div className="hidden md:hidden lg:flex absolute top-[600px] left-1/2 -translate-x-5 z-50 flex-row items-center gap-0">
             <motion.div
               initial={{
                 opacity: 0,

@@ -14,22 +14,22 @@ type Project = {
 const ProjectCard = (props: Project) => {
   const [hovered, setHovered] = useState(false);
   return (
-    <div className="pt-6 border-t-[1px] mb-0 border-t-[#f5efff]/10 border-opacity-20">
+    <div className=" pt-6 border-t-[1px] mb-0 border-t-[#f5efff]/10 border-opacity-20">
       <div
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="h-96 w-full relative p-6 pl-0 rounded-2xl min-h-96 flex flex-row hover:shadow-2xl transition-all duration-300 ease-out hover:shadow-violet-500/[0.1]"
+        className="lg:h-96 w-full relative p-6 pl-0 rounded-2xl min-h-96 flex flex-col lg:flex-row hover:shadow-2xl transition-all duration-300 ease-out hover:shadow-violet-500/[0.1]"
       >
         <div
           className={`absolute w-full h-full top-0 left-0 bg-white transition-opacity rounded-2xl ease-out duration-300 ${
             hovered ? " opacity-10 " : "opacity-0"
           }`}
         ></div>
-        <div className="z-10 basis-1/2 relative hover:cursor-pointer">
+        <div className="z-50 basis-1/2 relative hover:cursor-pointer">
           <a href={props.url} target="_blank">
             <img
               src={props.image}
-              className="rounded-xl w-full h-full object-cover hover:scale-110 duration-300 ease-out "
+              className="rounded-xl ml-4 w-full h-full object-cover hover:scale-110 duration-300 ease-out "
               alt={props.title}
             />
           </a>

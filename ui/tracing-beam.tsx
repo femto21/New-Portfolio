@@ -10,6 +10,7 @@ export const TracingBeam = ({
   children: React.ReactNode;
   className?: string;
 }) => {
+  const beamTopOffset = 80;
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -26,18 +27,18 @@ export const TracingBeam = ({
   }, []);
 
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.8], [5, svgHeight]),
+    useTransform(scrollYProgress, [0, 0.8], [beamTopOffset + 5, svgHeight]),
     {
       stiffness: 120,
       damping: 20,
-    }
+    },
   );
   const y2 = useSpring(
-    useTransform(scrollYProgress, [0, 1], [5, svgHeight - 200]),
+    useTransform(scrollYProgress, [0, 1], [beamTopOffset + 5, svgHeight - 200]),
     {
       stiffness: 120,
       damping: 20,
-    }
+    },
   );
 
   return (
@@ -45,7 +46,10 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("relative mx-auto h-full w-full max-w-10/12", className)}
     >
-      <div className="absolute top-0 -left-4 md:-left-20">
+      <div
+        className="absolute -left-4 md:-left-20"
+        style={{ top: `${beamTopOffset}px` }}
+      >
         <svg
           viewBox={`0 0 20 ${svgHeight}`}
           width="20"
@@ -54,7 +58,7 @@ export const TracingBeam = ({
           aria-hidden="true"
         >
           <motion.path
-            d={`M 14 0 V ${svgHeight - 80}`}
+            d={`M 14 ${beamTopOffset} V ${svgHeight - 80}`}
             fill="none"
             stroke="#9091A0"
             strokeOpacity="0.16"
@@ -62,7 +66,7 @@ export const TracingBeam = ({
           />
 
           <motion.path
-            d={`M 14 0 V ${svgHeight}`}
+            d={`M 14 ${beamTopOffset} V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
             strokeWidth="2"

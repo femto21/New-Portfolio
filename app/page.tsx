@@ -44,18 +44,19 @@ const HomePage = () => {
       <NavBar />
       {isDesktop && <Deck isAtTop={isAtTop} />}
 
-      <div className="m-auto overflow-hidden">
+      <div className="m-auto max-w-400 overflow-hidden">
         <TracingBeam>
           <Hero isAtTop={isAtTop} />
+          <Divider />
           <About />
           <Experience />
           <Project />
           <Contact />
         </TracingBeam>
+        <footer className="mt-16">
+          <Footer />
+        </footer>
       </div>
-      <footer className="mt-16">
-        <Footer />
-      </footer>
     </>
   );
 };

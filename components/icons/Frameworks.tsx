@@ -27,9 +27,9 @@ const Frameworks = () => {
         <div style={{ height: 40, width: 40 }}>
           <img src="Junit.png" />
         </div>
-        <div style={{ height: 40, width: 40 }}>
+        {/* <div style={{ height: 40, width: 40 }}>
           <StackIcon name="pytorch" />
-        </div>
+        </div> */}
         <div style={{ height: 40, width: 40 }}>
           <img src="TensorFlow.png" />
         </div>

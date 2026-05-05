@@ -35,7 +35,7 @@ const Contact = () => {
           form.current,
           {
             publicKey: process.env.NEXT_PUBLIC_PUBLIC_KEY,
-          }
+          },
         )
         .then(() => {
           toast("Message sent successfully");
@@ -53,7 +53,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="mx-8 lg:mx-auto h-[90vh] mt-30 mb-10  lg:w-3/5"
+      className="mx-8 lg:mx-auto max-h-[60vh] mt-30 mb-40  lg:w-3/5"
     >
       <p className="text-l mb-1 text-color2 text-shadow w-fit m-auto">
         Get In Touch
@@ -61,15 +61,15 @@ const Contact = () => {
       <p className="text-3xl text-color1 text-shadow w-fit m-auto">
         Contact Me
       </p>
-      <div className="mt-16 ml-0 lg:h-[70%] border-amber-300 flex flex-row gap-6 lg:mr-0 justify-around ">
+      <div className=" mt-16 ml-0  border-amber-300  flex flex-row gap-6 lg:mr-0 justify-around ">
         <div className="flex flex-col justify-between items-center gap-8 h-auto">
-          <div className="h-[100%] w-[100%] bg-white/10 px-2 py-2 rounded-2xl flex flex-col justify-around items-center">
+          <div className="h-full w-full bg-white/10 px-2 py-2 rounded-2xl flex flex-col justify-around items-center">
             <div className="text-color2 w-full text-shadow-subtle text-center  text-sm">
               Feel free to contact<br></br> me regarding anything<br></br> or
               just to say hi
             </div>
           </div>
-          <div className="h-[100%] w-[100%] bg-white/10 px-8 py-4 rounded-2xl flex flex-col justify-around items-center">
+          <div className="h-full w-full bg-white/10 px-8 py-4 rounded-2xl flex flex-col justify-around items-center">
             <div className="mb-2">
               <CiMail className="text-3xl text-color2 icon-shadow" />
             </div>
@@ -85,7 +85,7 @@ const Contact = () => {
               Send message
             </a>
           </div>
-          <div className="h-[100%] w-[100%] bg-white/10 px-8 py-4 rounded-2xl flex flex-col justify-around items-center">
+          <div className="h-full w-full bg-white/10 px-8 py-4 rounded-2xl flex flex-col justify-around items-center">
             <div className="mb-2">
               <FaLinkedin className="text-2xl text-color2 icon-shadow" />
             </div>
@@ -109,7 +109,7 @@ const Contact = () => {
             placeholder="Your full name"
             type="text"
             name="name"
-            className="h-12 shadow-input dark:placeholder-text-neutral-600 flex w-full rounded-md border-[1px] border-white/50 bg-transparent px-3 py-2 text-sm text-white transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
+            className="h-12 shadow-input dark:placeholder-text-neutral-600 flex w-full rounded-md border border-white/50 bg-transparent px-3 py-2 text-sm text-white transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
             required
           />
 
@@ -118,14 +118,14 @@ const Contact = () => {
             placeholder="Your Email"
             type="email"
             name="email"
-            className="h-12 shadow-input  flex w-full rounded-md border-[1px] border-white/50 bg-transparent px-3 py-2 text-sm text-white transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
+            className="h-12 shadow-input  flex w-full rounded-md border border-white/50 bg-transparent px-3 py-2 text-sm text-white transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
             required
           />
           <textarea
             id="message"
             placeholder="Write your message here :)"
             name="message"
-            className="h-48 shadow-input px-3 py-2 text-sm rounded-md dark:placeholder-text-neutral-600 border-[1px] border-white/50 resize-none transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-[2px] focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
+            className="h-48 shadow-input px-3 py-2 text-sm rounded-md dark:placeholder-text-neutral-600 border border-white/50 resize-none transition duration-400 group-hover/input:shadow-none file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-neutral-400 focus-visible:ring-2 focus-visible:ring-neutral-400 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 dark:bg-zinc-800 dark:text-white dark:shadow-[0px_0px_1px_1px_#404040] dark:focus-visible:ring-neutral-600"
             required
           />
 
@@ -140,7 +140,7 @@ const Contact = () => {
             </button>
           ) : (
             <button
-              className="group/plbtn relative block h-10 lg:w-48 cursor-pointer rounded-md bg-gradient-to-br from-[#a594f9] to-[#9c88ff] font-medium text-white text-shadow"
+              className="group/plbtn relative block h-10 lg:w-48 cursor-pointer rounded-md bg-linear-to-br from-[#a594f9] to-[#9c88ff] font-medium text-white text-shadow"
               type="submit"
               value="Send"
             >

@@ -10,10 +10,10 @@ const NavBar = () => {
   const [open, setOpen] = useState(false);
   const { setTheme } = useTheme();
   return (
-    <header>
+    <header className="absolute inset-x-0 top-0 z-30">
       <nav
         id="home"
-        className="md:px-4 md:py-6 px-6 py-6 flex items-center font-clashDisplay top-2 z-20"
+        className="md:px-4 md:py-6 px-6 py-6 flex items-center font-clashDisplay"
       >
         <div className="w-full flex justify-between items-center max-w-9/12 m-auto">
           <div className="flex justify-between">

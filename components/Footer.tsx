@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <Divider />
-      <div className="w-full h-80">
+      <div className="w-full h-[36vh]">
         <div className="w-full flex flex-col items-center">
           <div className="mt-8 w-fit text-color1 text-4xl font-clashDisplay text-shadow">
             Arpit Gahlot
@@ -66,7 +66,8 @@ const Footer = () => {
             </a>
           </div>
           <div className="mt-7 opacity-40 text-xs">
-            Copyright © Arpit Gahlot. All rights reserved.
+            Copyright © Arpit Gahlot. All rights reserved. (Inspired from
+            www.freddiego.dev)
           </div>
         </div>
       </div>

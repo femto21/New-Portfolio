@@ -23,14 +23,14 @@ const About = () => {
           <div className="mt-4">
             <p className="text-color2 text-center text-shadow-subtle">
               My name is Arpit Gahlot. I am studying Computer Science at
-              Dalhousie University and currently in my third year. I really like
+              Dalhousie University and currently in my final year. I really like
               coding and working with the cloud, and recently I have been into
-              Artificial Intelligence and Machine Learning as well. I have
-              professional work experience in Full Stack Development,
-              Cybersecurity, and Data Engineering through my internship at
-              Commissionaires Nova Scotia. I have also worked as a Freelance
-              Full Stack Developer. Outside of school and work, I am a big fan
-              of cooking and working out.
+              Artificial Intelligence as well. I have professional work
+              experience in Full Stack Development, Software Engineering, Cloud
+              Development, Cybersecurity, and Data Engineering through my
+              internship at Commissionaires Nova Scotia. I have also worked as a
+              Freelance Full Stack Developer. Outside of school and work, I am a
+              big fan of cooking and working out.
             </p>
           </div>
         </div>

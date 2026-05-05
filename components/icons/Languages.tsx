@@ -27,9 +27,9 @@ const Languages = () => {
         <div style={{ height: 40, width: 40 }}>
           <StackIcon name="c#" />
         </div>
-        <div style={{ height: 40, width: 40 }}>
+        {/* <div style={{ height: 40, width: 40 }}>
           <StackIcon name="c++" />
-        </div>
+        </div> */}
         <div style={{ height: 40, width: 40 }}>
           <StackIcon name="go" />
         </div>

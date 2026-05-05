@@ -11,6 +11,18 @@ type ExperienceItem = {
 const experiences: ExperienceItem[] = [
   {
     company: "Commissionaires Nova Scotia",
+    role: "Cloud Software Engineer Intern",
+    date: "January 2026 – April 2026",
+    logo: "/cns.png",
+    achievements: [
+      "Architected and engineered a scalable dashboard application with over 20 KPIs for an external client.",
+      "Engineered a Function App with 6 serverless functions to sync data in Azure SQL, processing 10,000+ records.",
+      "Enhanced cloud security posture by implementing Azure best practices and remediating security vulnerabilities, increasing Microsoft Defender for Cloud secure score by 30\%",
+      "Designed and implemented CI/CD pipelines using GitHub Actions and Azure Pipelines, reducing deployment time by ~70\% and improving release consistency.",
+    ],
+  },
+  {
+    company: "Commissionaires Nova Scotia",
     role: "Desktop Support and Cybersecurity Intern",
     date: "June 2025 – September 2025",
     logo: "/cns.png",

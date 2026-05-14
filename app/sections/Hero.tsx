@@ -17,7 +17,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
   return (
     <>
       <section className="relative h-screen flex flex-col justify-center w-full">
-        <div className="hidden md:hidden lg:flex absolute bottom-40 left-8 -translate-y-1/2 flex-col gap-4 text-lg items-center z-20">
+        <div className="hidden md:hidden min-[1020px]:-mb-30 min-[2000px]:mt-0 lg:flex absolute bottom-40 left-8 -translate-y-1/2 flex-col gap-4 text-lg items-center z-20">
           <a
             href="http://www.discord.com/users/530748472278646805"
             rel="noopener"
@@ -55,7 +55,7 @@ const Hero = ({ isAtTop }: { isAtTop: boolean }) => {
 
           <div className="bg-[#f5efff] h-18 w-px m-auto mt-1 icon-shadow"></div>
         </div>
-        <div className="absolute bottom-80 right-0 -translate-y-1/2 rotate-90 text-sm z-20 text-shadow font-clashDisplay">
+        <div className="absolute bottom-80 right-0 min-[1020px]:-mb-30 min-[2000px]:mt-0 -translate-y-1/2 rotate-90 text-sm z-20 text-shadow font-clashDisplay">
           <a
             href="#about"
             className="hidden md:hidden lg:block nav-color2 transition-all duration-300 ease-out"
